@@ -31,7 +31,7 @@ $pageServices = [
 $faqs = [
     [
         'q' => 'How much does deep cleaning cost in Sacramento?',
-        'a' => 'Deep cleaning costs in Sacramento typically range from $200 to $600 depending on home size, condition and what you need cleaned. Express Pro Cleaning Services gives you a clear flat quote after a quick phone walkthrough of your space, usually the same day you call.',
+        'a' => 'Deep cleaning costs in Sacramento typically range from $200 to $600 depending on home size, condition and what you need cleaned. Express Pro Cleaning Services gives you a clear flat quote after a quick phone walkthrough of your space.',
     ],
     [
         'q' => 'What is included in a move-out cleaning?',
@@ -43,7 +43,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you bring your own cleaning supplies and equipment?',
-        'a' => 'Yes. Express Pro Cleaning Services brings all cleaning supplies, tools and equipment needed for the job. We use eco-friendly, non-toxic products safe for families and pets. If you prefer we use a specific product you supply, just let us know when booking.',
+        'a' => 'Yes. Express Pro Cleaning Services brings all cleaning supplies, tools and equipment needed for the job. If you prefer we use a specific product you supply, just let us know when booking.',
     ],
     [
         'q' => 'Can I set up weekly or bi-weekly recurring house cleaning?',
@@ -415,7 +415,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Our Process</span>
       <h2>How does booking and getting the house cleaned <span class="text-accent">actually work</span>?</h2>
       <p class="answer-block">
-        You call or send the contact form with a description of the job, Express Pro gives you a flat quote usually the same day, we schedule around your calendar, our family team shows up with all supplies and cleans to a consistent checklist, and we walk through the finished work with you before leaving.
+        You call or send the contact form with a description of the job, Express Pro gives you a flat quote, we schedule around your calendar, our family team shows up with all supplies and cleans to a consistent checklist, and we walk through the finished work with you before leaving.
       </p>
     </div>
 
@@ -426,8 +426,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       </div>
 
       <div class="process-step" data-step="2">
-        <h3>Get a flat quote, same day</h3>
-        <p>We give you a clear price based on the job scope — no hourly guessing. Most quotes go out within a few hours of the initial contact. No obligation, no pressure to book.</p>
+        <h3>Get a flat quote</h3>
+        <p>We give you a clear price based on the job scope — no hourly guessing. No obligation, no pressure to book.</p>
       </div>
 
       <div class="process-step" data-step="3">
@@ -437,7 +437,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 
       <div class="process-step" data-step="4">
         <h3>We arrive with all supplies</h3>
-        <p>Our team brings eco-friendly cleaning products, tools and equipment. You do not need to supply anything. We use non-toxic cleaners safe for kids and pets unless you prefer we use a specific product you provide.</p>
+        <p>Our team brings the cleaning products, tools and equipment for the job. You do not need to supply anything, unless you prefer we use a specific product you provide.</p>
       </div>
 
       <div class="process-step" data-step="5">
@@ -456,7 +456,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Why Express Pro</span>
       <h2>What makes Express Pro different from other <span class="text-accent">Sacramento cleaning companies</span>?</h2>
       <p class="answer-block">
-        Express Pro Cleaning Services is family-owned and hands-on — no franchise system, no rotating crews. We have cleaned Sacramento homes since 1991, we bring our own eco-friendly supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
+        Express Pro Cleaning Services is family-owned and hands-on — no franchise system, no rotating crews. We have cleaned Sacramento homes since 1991, we bring our own supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
       </p>
     </div>
 
@@ -472,8 +472,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       </div>
 
       <div class="why-card reveal-up reveal-delay-3">
-        <h3>Eco-friendly, non-toxic products</h3>
-        <p>All cleaning supplies we bring are safe for children, pets and people with sensitivities. We use effective, environmentally responsible products as the default — not an upcharge option.</p>
+        <h3>All supplies included</h3>
+        <p>We bring the cleaning supplies, tools and equipment for every job — nothing for you to buy or stock. If you prefer a specific product, tell us when booking.</p>
       </div>
 
       <div class="why-card reveal-up reveal-delay-4">
@@ -509,7 +509,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Get a free house cleaning estimate for your Sacramento home</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply the same day with a clear flat quote. No obligation, no pressure.</p>
+      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear flat quote. No obligation, no pressure.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Get my free estimate</button>
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">

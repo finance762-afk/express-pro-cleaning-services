@@ -7,15 +7,15 @@
   },
   "site": "express-pro-cleaning-services",
   "expected_slug": "express-pro-cleaning-services",
-  "passed": false,
-  "grade": "F",
-  "score_pct": 80,
+  "passed": true,
+  "grade": "A",
+  "score_pct": 96,
   "summary": {
-    "total": 170,
-    "passed": 133,
-    "failed": 29,
-    "warn": 8,
-    "blockers_failed": 21,
+    "total": 152,
+    "passed": 137,
+    "failed": 8,
+    "warn": 7,
+    "blockers_failed": 0,
     "warnings_failed": 10
   },
   "techniques_detected": [
@@ -47,7 +47,7 @@
     {
       "name": "color_mix",
       "description": "color-mix() function (modern CSS)",
-      "matches": 79
+      "matches": 81
     },
     {
       "name": "scroll_snap",
@@ -237,169 +237,15 @@
       "section": "FILE STRUCTURE"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "AEO file: llms-full.txt",
-      "detail": "Missing \u2014 required for AEO",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Create llms-full.txt per references/seo-aeo-2026.md",
+      "fix_hint": "",
       "section": "FILE STRUCTURE"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "404.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "service-areas/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "privacy-policy/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "terms/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "about/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "thank-you/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "contact/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "cookie-policy/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "accessibility/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/seasonal-services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/cleaning-services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/gutter-cleaning/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
@@ -437,22 +283,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 685 lines total",
+      "detail": "Linked to 1 external CSS file(s), 687 lines total",
       "file": "privacy-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "685",
+      "actual": "687",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 685 lines total",
+      "detail": "Linked to 1 external CSS file(s), 687 lines total",
       "file": "terms/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "685",
+      "actual": "687",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -503,22 +349,22 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 685 lines total",
+      "detail": "Linked to 1 external CSS file(s), 687 lines total",
       "file": "cookie-policy/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "685",
+      "actual": "687",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 685 lines total",
+      "detail": "Linked to 1 external CSS file(s), 687 lines total",
       "file": "accessibility/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "685",
+      "actual": "687",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -558,44 +404,44 @@
     {
       "status": "pass",
       "check": "Standard tier CSS bar",
-      "detail": "721 lines (36 inline + 685 external, need \u22650)",
+      "detail": "723 lines (36 inline + 687 external, need \u22650)",
       "file": "index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "721",
+      "actual": "723",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Standard tier CSS bar",
-      "detail": "895 lines (210 inline + 685 external, need \u22650)",
+      "detail": "897 lines (210 inline + 687 external, need \u22650)",
       "file": "about/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "895",
+      "actual": "897",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Standard tier CSS bar",
-      "detail": "803 lines (118 inline + 685 external, need \u22650)",
+      "detail": "805 lines (118 inline + 687 external, need \u22650)",
       "file": "services/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "803",
+      "actual": "805",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
       "check": "Standard tier CSS bar",
-      "detail": "825 lines (140 inline + 685 external, need \u22650)",
+      "detail": "827 lines (140 inline + 687 external, need \u22650)",
       "file": "contact/index.php",
       "severity": "blocker",
       "expected": "0",
-      "actual": "825",
+      "actual": "827",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -1053,7 +899,18 @@
     {
       "status": "pass",
       "check": "llms.txt content",
-      "detail": "91 lines",
+      "detail": "89 lines",
+      "file": "",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "AEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "llms-full.txt content",
+      "detail": "287 lines",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1425,14 +1282,14 @@
       "section": "COMPLIANCE & TRUST"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Undefined CSS tokens",
-      "detail": "2 var() token(s) never defined: --color-accent-light, --color-primary-light",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Define them in framework.css :root (or use the alias block)",
+      "fix_hint": "",
       "section": "CSS CONTRACT"
     },
     {
@@ -1568,14 +1425,14 @@
       "section": "AEO CONTENT"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Hero answer word count",
-      "detail": "30 words (expected 35-70)",
+      "detail": "46 words",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Adjust .hero-answer paragraph to 35-70 words",
+      "fix_hint": "",
       "section": "AEO CONTENT"
     },
     {
@@ -1612,9 +1469,9 @@
       "section": "PERFORMANCE"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No remote-hotlinked images",
-      "detail": "1 remote image ref(s) in 1 file(s) (e.g. https://pageonepartner.com/badge/<?php echo $ppSlug; ?>.svg) \u2014 download to /assets/images/, generate -480/-960/-1600 webp variants, rewrite src/srcset/url() to local paths",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -1722,14 +1579,14 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Hero image \u2264150KB",
-      "detail": "logo-original.png: 807KB (largest image (no hero-named file); budget 150KB)",
+      "detail": "logo.png: 145KB (largest image (no hero-named file))",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -1777,22 +1634,11 @@
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No image file > 250KB",
-      "detail": "1 referenced file(s) over budget: logo.png 417KB",
+      "detail": "3 referenced image path(s) checked",
       "file": "",
       "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode via lib/responsive-images.ts (quality ladder caps 480/960/1600 at 50/100/150KB) and reference the variants, not the original",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "warn",
-      "check": "Unreferenced images > 250KB on disk",
-      "detail": "2 file(s) not referenced by any page, e.g. logo-original.png 806KB, CC84521A-B611-4EA8-B590-76B64505DC80.png 806KB",
-      "file": "",
-      "severity": "info",
       "expected": null,
       "actual": null,
       "fix_hint": "",
@@ -1832,20 +1678,9 @@
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "pass",
-      "check": "sitemap.xml reachable",
-      "detail": "/sitemap.xml \u2192 404 on the preview host (no rewrite there), but /sitemap.php serves 12 <loc> entries \u2014 fine on Hostinger",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
       "status": "warn",
-      "check": "Preview host lacks the /sitemap.xml rewrite",
-      "detail": "Add to /etc/nginx/sites-available/preview: location = /sitemap.xml { try_files /sitemap.xml /sitemap.php; }",
+      "check": "sitemap.xml reachable (needs --url)",
+      "detail": "Pass --url https://preview-<slug>.pageone.cloud (or the live domain) to fetch /sitemap.xml",
       "file": "",
       "severity": "info",
       "expected": null,
@@ -1856,7 +1691,7 @@
     {
       "status": "pass",
       "check": "Homepage image payload \u2264600KB (static estimate)",
-      "detail": "~420KB eager at 960w candidates (+0KB lazy, loaded on scroll)",
+      "detail": "~147KB eager at 960w candidates (+0KB lazy, loaded on scroll)",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1867,7 +1702,7 @@
     {
       "status": "pass",
       "check": "Total page weight \u22641.5MB (static estimate)",
-      "detail": "~582KB uncompressed HTML+CSS+JS+fonts+images",
+      "detail": "~310KB uncompressed HTML+CSS+JS+fonts+images",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1898,42 +1733,9 @@
       "section": "PERFORMANCE v6.3"
     },
     {
-      "status": "fail",
-      "check": "Lighthouse mobile Performance \u226590",
-      "detail": "80 (runs [76, 80, 84]) \u2014 LCP 4.3s \u00b7 CLS 0.085 \u00b7 TBT 179ms \u00b7 560KB; LCP element: <p class=\"hero-answer\">",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Fix the LCP image (local <picture>, \u2264150KB, fetchpriority=high), inline critical CSS, defer scripts \u2014 performance-2026.md v6.3",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "pass",
-      "check": "Lighthouse mobile Accessibility \u226595",
-      "detail": "96",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "pass",
-      "check": "Lighthouse mobile Best Practices \u226595",
-      "detail": "100",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
       "status": "warn",
-      "check": "Lighthouse mobile SEO \u226595",
-      "detail": "61 on a preview host (X-Robots noindex + robots block depress the SEO category by design) \u2014 re-check on the live domain",
+      "check": "Lighthouse mobile (needs --url)",
+      "detail": "Pass --url to run qa/lighthouse-mobile.mjs (Performance \u226590 FAIL, other categories \u226595 WARN)",
       "file": "",
       "severity": "info",
       "expected": null,
@@ -1943,171 +1745,6 @@
     }
   ],
   "failures": [
-    {
-      "status": "fail",
-      "check": "AEO file: llms-full.txt",
-      "detail": "Missing \u2014 required for AEO",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Create llms-full.txt per references/seo-aeo-2026.md",
-      "section": "FILE STRUCTURE"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "404.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "service-areas/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "privacy-policy/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "terms/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "about/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "thank-you/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "contact/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "cookie-policy/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "accessibility/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/seasonal-services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/cleaning-services/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
-    {
-      "status": "fail",
-      "check": "SEO var $pageDescription before head.php",
-      "detail": "Not set before include",
-      "file": "services/gutter-cleaning/index.php",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PHP STANDARDS"
-    },
     {
       "status": "fail",
       "check": "Nav scroll transition",
@@ -2165,17 +1802,6 @@
     },
     {
       "status": "fail",
-      "check": "Undefined CSS tokens",
-      "detail": "2 var() token(s) never defined: --color-accent-light, --color-primary-light",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Define them in framework.css :root (or use the alias block)",
-      "section": "CSS CONTRACT"
-    },
-    {
-      "status": "fail",
       "check": "No carousel libraries",
       "detail": "Carousel JS found in: assets/js/main.js",
       "file": "",
@@ -2198,50 +1824,6 @@
     },
     {
       "status": "fail",
-      "check": "Hero answer word count",
-      "detail": "30 words (expected 35-70)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Adjust .hero-answer paragraph to 35-70 words",
-      "section": "AEO CONTENT"
-    },
-    {
-      "status": "fail",
-      "check": "No remote-hotlinked images",
-      "detail": "1 remote image ref(s) in 1 file(s) (e.g. https://pageonepartner.com/badge/<?php echo $ppSlug; ?>.svg) \u2014 download to /assets/images/, generate -480/-960/-1600 webp variants, rewrite src/srcset/url() to local paths",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "Hero image \u2264150KB",
-      "detail": "logo-original.png: 807KB (largest image (no hero-named file); budget 150KB)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "No image file > 250KB",
-      "detail": "1 referenced file(s) over budget: logo.png 417KB",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode via lib/responsive-images.ts (quality ladder caps 480/960/1600 at 50/100/150KB) and reference the variants, not the original",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "fail",
       "check": "CTA band form on blog/about/FAQ pages",
       "detail": "1 page(s) without a mid-page form: about/index.php",
       "file": "",
@@ -2249,17 +1831,6 @@
       "expected": null,
       "actual": null,
       "fix_hint": "<section class=\"cta-band\"> with the compact form after the first content section",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "fail",
-      "check": "Lighthouse mobile Performance \u226590",
-      "detail": "80 (runs [76, 80, 84]) \u2014 LCP 4.3s \u00b7 CLS 0.085 \u00b7 TBT 179ms \u00b7 560KB; LCP element: <p class=\"hero-answer\">",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Fix the LCP image (local <picture>, \u2264150KB, fetchpriority=high), inline critical CSS, defer scripts \u2014 performance-2026.md v6.3",
       "section": "PERFORMANCE v6.3"
     }
   ],
@@ -2321,8 +1892,8 @@
     },
     {
       "status": "warn",
-      "check": "Unreferenced images > 250KB on disk",
-      "detail": "2 file(s) not referenced by any page, e.g. logo-original.png 806KB, CC84521A-B611-4EA8-B590-76B64505DC80.png 806KB",
+      "check": "sitemap.xml reachable (needs --url)",
+      "detail": "Pass --url https://preview-<slug>.pageone.cloud (or the live domain) to fetch /sitemap.xml",
       "file": "",
       "severity": "info",
       "expected": null,
@@ -2332,19 +1903,8 @@
     },
     {
       "status": "warn",
-      "check": "Preview host lacks the /sitemap.xml rewrite",
-      "detail": "Add to /etc/nginx/sites-available/preview: location = /sitemap.xml { try_files /sitemap.xml /sitemap.php; }",
-      "file": "",
-      "severity": "info",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "PERFORMANCE v6.3"
-    },
-    {
-      "status": "warn",
-      "check": "Lighthouse mobile SEO \u226595",
-      "detail": "61 on a preview host (X-Robots noindex + robots block depress the SEO category by design) \u2014 re-check on the live domain",
+      "check": "Lighthouse mobile (needs --url)",
+      "detail": "Pass --url to run qa/lighthouse-mobile.mjs (Performance \u226590 FAIL, other categories \u226595 WARN)",
       "file": "",
       "severity": "info",
       "expected": null,

@@ -208,31 +208,19 @@
           "q": "What types of facilities do you service?"
         },
         {
-          "a": "Yes, we offer flexible scheduling including evening, weekend, and emergency same-day services to fit your business needs without disrupting operations.",
-          "q": "Can you accommodate after-hours or emergency cleaning?"
-        },
-        {
-          "a": "We prioritize eco-friendly, non-toxic products that are effective, safe for all occupants, and environmentally responsible.",
-          "q": "Are your cleaning products safe for employees and customers?"
-        },
-        {
-          "a": "All staff are professionally trained, uniformed, and background-checked. We conduct regular quality audits and stand behind our work with satisfaction guarantees.",
-          "q": "How do you ensure consistent quality?"
+          "a": "Yes, we offer flexible scheduling including evening and weekend service to fit your business needs without disrupting operations.",
+          "q": "Can you accommodate after-hours cleaning?"
         },
         {
           "a": "Packages are fully customizable based on your facility type and needs—from routine daily maintenance to deep cleaning, floor care, and specialized services. Contact us for a free assessment.",
           "q": "What's included in your cleaning packages?"
         }
       ],
-      "about_angle": "Position Express Pro as the partner that understands Sacramento's diverse business community. Emphasize reliability, attention to detail, and commitment to supporting local businesses with consistent, professional cleaning. Highlight the team's training, background verification, and genuine care for client spaces. Frame cleaning as essential to business reputation and employee health.",
+      "about_angle": "Position Express Pro as the partner that understands Sacramento's diverse business community. Emphasize reliability, attention to detail, and commitment to supporting local businesses with consistent, professional cleaning. Highlight the team's genuine care for client spaces. Frame cleaning as essential to business reputation and employee health.",
       "hero_headline": "Professional Cleaning Services That Transform Your Space",
       "differentiators": [
-        "Same-day/emergency cleaning availability and responsive scheduling",
-        "Eco-friendly, certified sustainable cleaning products and practices",
-        "Highly trained, background-checked, uniformed cleaning professionals",
         "Customizable cleaning packages (daily, weekly, monthly, event-based)",
-        "Local Sacramento ownership with institutional knowledge of regional businesses",
-        "Transparent, guaranteed results with accountability guarantees or service credits"
+        "Local Sacramento ownership with institutional knowledge of regional businesses"
       ],
       "hero_subheadline": "Reliable, eco-conscious janitorial services for Sacramento businesses that demand spotless results",
       "tone_recommendation": "Professional yet approachable—authoritative enough to convey expertise and reliability, but warm and personable enough to feel like a trusted local partner. Avoid corporate jargon; use clear, direct language. Show that the team cares about the client's business success, not just completing tasks. Balance competence with human connection."

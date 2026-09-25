@@ -36,7 +36,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you provide janitorial supplies or do we need to stock them?',
-        'a' => 'Express Pro Cleaning Services brings all cleaning supplies and equipment. You do not need to stock paper towels, soap, trash bags or cleaning chemicals. We use eco-friendly products as the standard unless your facility has a specific product requirement.',
+        'a' => 'Express Pro Cleaning Services brings all cleaning supplies and equipment. You do not need to stock paper towels, soap, trash bags or cleaning chemicals. If your facility has a specific product requirement, let us know.',
     ],
     [
         'q' => 'How does Christmas light installation work?',
@@ -44,7 +44,7 @@ $faqs = [
     ],
     [
         'q' => 'Do I need to provide the Christmas lights or do you supply them?',
-        'a' => 'We can install lights you already own or provide commercial-grade LED lights as part of the service. Most Sacramento clients prefer our lights because they are brighter, longer-lasting and covered by our installation warranty.',
+        'a' => 'We can install lights you already own or supply lights as part of the service. Tell us which you prefer when you book and we will include it in your quote.',
     ],
     [
         'q' => 'When should I book Christmas light installation?',
@@ -370,7 +370,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 
       <div class="benefit-card reveal-up reveal-delay-3">
         <h4>Professional supplies included</h4>
-        <p>We bring all cleaning chemicals, tools, trash bags, paper products and equipment. You do not stock supplies or manage inventory. We use eco-friendly products as the default unless your facility requires something specific.</p>
+        <p>We bring all cleaning chemicals, tools, trash bags, paper products and equipment. You do not stock supplies or manage inventory. If your facility requires a specific product, let us know.</p>
       </div>
 
       <div class="benefit-card reveal-up reveal-delay-4">
@@ -413,7 +413,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <div class="timeline-badge">Dec–Jan</div>
         <div class="timeline-content">
           <h4>Mid-season check and support</h4>
-          <p>If a section goes dark or a bulb burns out during the season, call and we come back to fix it at no extra charge. Your lights stay bright through New Year.</p>
+          <p>If a section goes dark or a bulb burns out during the season, call us and we can come back to take a look.</p>
         </div>
       </div>
 
@@ -453,7 +453,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Get a free estimate for office cleaning or holiday lights</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply the same day with a clear quote. Serving Sacramento businesses and homes since 1991.</p>
+      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear quote. Serving Sacramento businesses and homes since 1991.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Get my free estimate</button>
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">

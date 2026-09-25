@@ -23,7 +23,7 @@ $pageServices = [
 $faqs = [
     [
         'q' => 'How much does gutter cleaning cost in Sacramento?',
-        'a' => 'Gutter cleaning for a typical Sacramento home costs $120 to $300 depending on the amount of debris, gutter length and roof pitch. Express Pro Cleaning Services gives you a flat quote based on a look at your roofline, usually the same day you call.',
+        'a' => 'Gutter cleaning for a typical Sacramento home costs $120 to $300 depending on the amount of debris, gutter length and roof pitch. Express Pro Cleaning Services gives you a flat quote based on a look at your roofline.',
     ],
     [
         'q' => 'How often should I clean my gutters in Sacramento?',
@@ -376,7 +376,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Simple Process</span>
       <h2>How does booking gutter cleaning in Sacramento <span class="text-accent">work</span>?</h2>
       <p class="answer-block">
-        You call or send the estimate form, Express Pro looks at photos of your roofline or visits the property to measure gutter length and assess debris, we give you a flat quote usually the same day, we schedule the cleaning at a time that works for you, and our team clears the gutters and hauls debris away in one visit.
+        You call or send the estimate form, Express Pro looks at photos of your roofline or visits the property to measure gutter length and assess debris, we give you a flat quote, we schedule the cleaning at a time that works for you, and our team clears the gutters and hauls debris away in one visit.
       </p>
     </div>
 
@@ -390,7 +390,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <div class="process-card reveal-up reveal-delay-2">
         <div class="process-card__number">2</div>
         <h4>Get a flat quote</h4>
-        <p>We give you a clear price based on gutter length, roof pitch and debris volume. Most quotes go out the same day. No obligation.</p>
+        <p>We give you a clear price based on gutter length, roof pitch and debris volume. No obligation.</p>
       </div>
 
       <div class="process-card reveal-up reveal-delay-3">
@@ -433,7 +433,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Protect your Sacramento home — schedule gutter cleaning today</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply the same day with a clear quote. Serving Sacramento since 1991.</p>
+      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear quote. Serving Sacramento since 1991.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Get my free estimate</button>
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">

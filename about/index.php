@@ -430,7 +430,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
           On recurring jobs we keep the same crew so you see familiar faces and the team knows your space and your preferences. We bring our own equipment and supplies unless you have specific product requests. For move-outs and deep cleans we work section by section, finishing each area completely before moving to the next.
         </p>
         <p>
-          If you notice something we missed, we come back and make it right — no debate, no charge. That is how we have built a word-of-mouth business across Sacramento for over three decades.
+          If you notice something we missed, tell us — we want to hear about it. That is how we have built a word-of-mouth business across Sacramento for over three decades.
         </p>
       </div>
       <div class="reveal-right">
@@ -442,7 +442,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
             <li><?php echo icon('users', 20); ?><span>Same crew on recurring jobs — no rotating strangers</span></li>
             <li><?php echo icon('sparkles', 20); ?><span>We bring all equipment and supplies unless you prefer otherwise</span></li>
             <li><?php echo icon('eye', 20); ?><span>Walkthrough before we leave so you can verify the work</span></li>
-            <li><?php echo icon('shield', 20); ?><span>If we miss something, we return and fix it at no charge</span></li>
+            <li><?php echo icon('globe', 20); ?><span>Book and communicate in English, Ukrainian or Russian</span></li>
           </ul>
         </div>
       </div>
@@ -490,10 +490,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
           </div>
         </div>
         <div class="credential-item">
-          <?php echo icon('shield-check', 24); ?>
+          <?php echo icon('sparkles', 24); ?>
           <div class="credential-item__text">
-            <strong>Satisfaction Guaranteed</strong>
-            <span>If we miss something, we return and fix it at no charge</span>
+            <strong>Full-Service Cleaning</strong>
+            <span>Homes, offices, carpets, windows, blinds and gutters</span>
           </div>
         </div>
       </div>
@@ -507,7 +507,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container">
     <div class="cta-content reveal-up">
       <h2>Ready to schedule a cleaning?</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send a quick request and we will get back to you the same day with a clear, flat-rate quote.</p>
+      <p>Call <?php echo formatPhone($phone); ?> or send a quick request and we will get back to you with a clear, flat-rate quote.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Get a free estimate</button>
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">

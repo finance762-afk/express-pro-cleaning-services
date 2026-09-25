@@ -267,7 +267,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Why Express Pro</span>
       <h2>Why do Sacramento homeowners and businesses choose <span class="text-accent">Express Pro Cleaning Services</span>?</h2>
       <p class="answer-block">
-        Express Pro is family-owned and hands-on — no franchise system, no rotating crews — with 35 years cleaning Sacramento homes and offices. We bring our own eco-friendly supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
+        Express Pro is family-owned and hands-on — no franchise system, no rotating crews — with 35 years cleaning Sacramento homes and offices. We bring our own supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
       </p>
     </div>
 
@@ -292,8 +292,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <div class="why-item__icon">
           <?php echo icon('leaf', 32); ?>
         </div>
-        <h3>Eco-friendly products</h3>
-        <p>All cleaning supplies are non-toxic and safe for kids, pets and people with sensitivities. No upcharge for green products.</p>
+        <h3>All supplies included</h3>
+        <p>We bring our own cleaning supplies, tools and equipment to every job. If you prefer a specific product, just let us know when booking.</p>
       </div>
 
       <div class="why-item reveal-up reveal-delay-4">
@@ -312,7 +312,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Get a free cleaning estimate for your Sacramento home or business</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply the same day with a clear quote. Serving Sacramento since 1991.</p>
+      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear, no-obligation quote. Serving Sacramento since 1991.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-primary btn-lg" data-open-estimate>Get my free estimate</button>
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">

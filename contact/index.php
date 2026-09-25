@@ -10,7 +10,7 @@ $pageType        = 'other';
 $currentPage     = 'contact';
 $canonicalUrl    = $siteUrl . '/contact/';
 $pageTitle       = 'Contact Us | ' . $siteName . ' | Sacramento, CA';
-$metaDescription = 'Contact Express Pro Cleaning Services for a free cleaning estimate in Sacramento. Call ' . $phone . ' or fill out our quick form. Same-day response guaranteed.';
+$metaDescription = 'Contact Express Pro Cleaning Services for a free cleaning estimate in Sacramento. Call ' . $phone . ' or fill out our quick form.';
 $pageDescription = $metaDescription;
 
 // Breadcrumb schema
@@ -194,7 +194,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow">Get in Touch</span>
       <h1>Contact Express Pro Cleaning Services</h1>
       <p class="hero-answer">
-        Call <?php echo formatPhone($phone); ?> for immediate assistance, or fill out the form below and we will get back to you the same day with a clear, flat-rate quote. No pressure, no upsells.
+        Call <?php echo formatPhone($phone); ?> or fill out the form below and we will get back to you with a clear, flat-rate quote. No pressure, no upsells.
       </p>
     </div>
   </div>
@@ -219,7 +219,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <div class="contact-form reveal-left">
         <h2>Send us a message</h2>
         <p class="form-intro">
-          Tell us about your cleaning needs and we will respond the same day — usually within a few hours.
+          Tell us about your cleaning needs and we will get back to you with a clear quote.
         </p>
 
         <form action="<?php echo e($formAction); ?>" method="POST">
@@ -295,7 +295,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
             </li>
           </ul>
           <p style="margin-top: 1rem; color: var(--color-muted); font-size: 0.9rem;">
-            We respond to all inquiries the same day, typically within a few hours. Call for immediate assistance.
+            We respond to every inquiry. Call during business hours to speak with us directly.
           </p>
         </div>
 

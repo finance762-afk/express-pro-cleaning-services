@@ -108,7 +108,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <span class="eyebrow">Sacramento, CA · Family-owned since 1991</span>
         <h1 class="hero-title">Family-run house cleaning in Sacramento</h1>
         <p class="hero-answer">
-          Express Pro Cleaning Services has cleaned Sacramento homes and offices since 1991 — deep cleans, move-outs, recurring visits, carpets, windows and gutter cleaning from a family team fluent in English, Ukrainian and Russian. We handle residential and commercial properties with flexible scheduling and same-day quotes.
+          Express Pro Cleaning Services has cleaned Sacramento homes and offices since 1991 — deep cleans, move-outs, recurring visits, carpets, windows and gutter cleaning from a family team fluent in English, Ukrainian and Russian. We handle residential and commercial properties with flexible scheduling and free, no-obligation quotes.
         </p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
@@ -293,7 +293,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         </li>
         <li>
           <b>Free estimate</b>
-          <span>We give you a clear, no-obligation price, usually the same day.</span>
+          <span>We give you a clear, no-obligation price before any work starts.</span>
         </li>
         <li>
           <b>We clean</b>
@@ -352,7 +352,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="card reveal-up">
       <span class="eyebrow-label">Free Estimate</span>
       <h2>Tell us about the job</h2>
-      <p class="prose">Send a few details and Express Pro Cleaning Services will get back to you the same day with a clear price. No obligation, no pressure.</p>
+      <p class="prose">Send a few details and Express Pro Cleaning Services will get back to you with a clear price. No obligation, no pressure.</p>
 
       <form action="<?php echo e($formAction); ?>" method="POST">
         <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -412,7 +412,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="reveal-right">
       <h3>What happens next</h3>
       <ol class="next-steps">
-        <li><strong>We call you back — same day.</strong> A member of the family, not a call center.</li>
+        <li><strong>We call you back.</strong> A member of the family, not a call center.</li>
         <li><strong>Quick walkthrough &amp; flat quote.</strong> We size up the job and give you a clear price.</li>
         <li><strong>We schedule around you.</strong> Evenings and weekends available for offices.</li>
       </ol>

@@ -4,7 +4,7 @@
 
   <!-- Header / Navbar -->
   <header class="site-header" data-header>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <nav class="navbar navbar-inner container-wide" role="navigation" aria-label="Main navigation">
       <div class="navbar-inner container">
         <!-- Logo -->
         <a href="/" class="site-logo" aria-label="<?php echo e($siteName); ?> Home">

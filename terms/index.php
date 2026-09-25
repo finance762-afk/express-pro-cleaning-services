@@ -101,12 +101,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <li>Work is governed by a written service agreement or work order specific to each job.</li>
       <li>We comply with applicable <?php echo $companyState; ?> state and local health and safety regulations.</li>
       <li>Work is performed by <?php echo e($siteName); ?> employees and qualified subcontractors.</li>
-      <li>All workers carry workers' compensation insurance as required by <?php echo $companyState; ?> law.</li>
-      <li>We are licensed and insured to operate in the state of <?php echo $companyState; ?>.</li>
     </ul>
 
-    <h2>5. Warranties</h2>
-    <p>We stand behind the quality of our work. If you are not satisfied with a cleaning service within 24 hours of completion, contact us and we will return to address the issue at no additional charge. This satisfaction guarantee excludes:</p>
+    <h2>5. Service Concerns</h2>
+    <p>If you have a concern about a completed cleaning service, contact us as soon as possible so we can review it with you. This does not cover:</p>
     <ul>
       <li>Issues arising from conditions beyond our control (acts of nature, accidents after service completion)</li>
       <li>Damage from neglect, misuse, or alteration by others after our work is complete</li>
@@ -131,8 +129,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <li>Recurring services: 30-day notice required to discontinue</li>
     </ul>
 
-    <h2>8. Liability and Insurance</h2>
-    <p>We carry general liability insurance and workers' compensation insurance as required by <?php echo $companyState; ?> law. Our liability for any claim is limited to the amount you paid for the specific service giving rise to the claim.</p>
+    <h2>8. Liability</h2>
+    <p>Our liability for any claim is limited to the amount you paid for the specific service giving rise to the claim.</p>
     <p>We are not liable for:</p>
     <ul>
       <li>Damage to items not disclosed to us prior to service (fragile items, heirlooms, valuables)</li>

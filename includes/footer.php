@@ -164,7 +164,7 @@
     <div class="dialog-head">
       <div>
         <h3 id="estimate-dialog-title">Get a free estimate</h3>
-        <p class="footnote">We reply the same day — usually within a few hours.</p>
+        <p class="footnote">We reply to every request — a member of the family, not a call center.</p>
       </div>
       <button type="button" class="dialog-close" aria-label="Close" data-close-estimate>
         <?php echo icon('x', 20); ?>
