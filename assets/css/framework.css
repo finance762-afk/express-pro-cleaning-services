@@ -734,3 +734,5 @@ html.js-anim .reveal-d1, html.js-anim .reveal-delay-1 { transition-delay: .08s }
     right: 1rem;
   }
 }
+
+@media (max-width: 1000px) { :root { --nav-height: 96px; --navbar-height: 96px; } }
