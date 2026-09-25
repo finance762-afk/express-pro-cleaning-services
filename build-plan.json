@@ -1,0 +1,268 @@
+{
+  "seo": {
+    "serp_context": null,
+    "target_radius": 30,
+    "primary_keyword": "house cleaning Sacramento",
+    "secondary_keywords": [
+      "deep cleaning Sacramento CA",
+      "move out cleaning Sacramento",
+      "office cleaning Sacramento",
+      "window cleaning Sacramento"
+    ]
+  },
+  "tier": "standard",
+  "email": "expressprocleanings@gmail.com",
+  "pages": [
+    {
+      "slug": "cleaning-services",
+      "type": "service_group",
+      "title": "Cleaning Services in Sacramento, CA",
+      "sections": "hero, service_cards_grid, individual_service_details, process, cta",
+      "services": [
+        "House Cleaning",
+        "Deep Cleaning",
+        "Move-In / Move-Out Cleaning",
+        "Recurring House Cleaning",
+        "Post-Construction Cleaning",
+        "Carpet Cleaning",
+        "Window Cleaning",
+        "Blind Cleaning",
+        "Pressure Washing"
+      ],
+      "primary_keyword": "move-in / move-out cleaning Sacramento CA"
+    },
+    {
+      "slug": "seasonal-services",
+      "type": "service_group",
+      "title": "Seasonal Services in Sacramento, CA",
+      "sections": "hero, service_cards_grid, individual_service_details, process, cta",
+      "services": [
+        "Office Cleaning",
+        "Christmas Light Installation"
+      ],
+      "primary_keyword": "christmas light installation Sacramento CA"
+    },
+    {
+      "slug": "gutter-cleaning",
+      "type": "service",
+      "title": "Gutter Cleaning in Sacramento, CA",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Gutter Cleaning"
+      ],
+      "primary_keyword": "gutter cleaning Sacramento CA"
+    }
+  ],
+  "phone": "(916) 983-9274",
+  "assets": {
+    "logo": {
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/onboarding/f1549673-510d-4e09-9dda-a642778ca110/1788189669357-CC84521A-B611-4EA8-B590-76B64505DC80.png",
+      "storage_path": "onboarding/f1549673-510d-4e09-9dda-a642778ca110/1788189669357-CC84521A-B611-4EA8-B590-76B64505DC80.png"
+    },
+    "images": [
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/express-pro-cleaning-services/processed/1788189669357-CC84521A-B611-4EA8-B590-76B64505DC80.webp",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "logo",
+        "storage_path": "onboarding/f1549673-510d-4e09-9dda-a642778ca110/1788189669357-CC84521A-B611-4EA8-B590-76B64505DC80.png",
+        "quality_score": null
+      }
+    ],
+    "page_allocations": null,
+    "recommended_hero_image": {
+      "alt": "",
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/express-pro-cleaning-services/processed/1788189669357-CC84521A-B611-4EA8-B590-76B64505DC80.webp",
+      "context": "logo",
+      "quality_score": null
+    }
+  },
+  "design": {
+    "fonts": {},
+    "notes": "",
+    "style": "modern",
+    "colors": {
+      "extracted_from_logo": true
+    },
+    "logo_analysis": {}
+  },
+  "domain": "express-pro-cleaning-services",
+  "phases": [
+    {
+      "name": "scaffold",
+      "phase": 1,
+      "status": "pending"
+    },
+    {
+      "name": "nav_footer_head",
+      "phase": 2,
+      "status": "pending"
+    },
+    {
+      "name": "homepage",
+      "phase": 3,
+      "status": "pending"
+    },
+    {
+      "name": "inner_pages",
+      "phase": 4,
+      "status": "pending"
+    },
+    {
+      "name": "seo_aeo_deploy",
+      "phase": 5,
+      "status": "pending"
+    }
+  ],
+  "address": {
+    "zip": "95838",
+    "city": "Sacramento",
+    "state": "CA",
+    "street": "205 Sumatra Dr"
+  },
+  "content": {
+    "usps": [
+      "Family owned since 1991",
+      "Formerly Express Mini Blind & Window Cleaning",
+      "Service in English, Ukrainian and Russian"
+    ],
+    "years": 35,
+    "insurance": "",
+    "description": "Express Pro Cleaning Services LLC is a local business serving Sacremento, CA and the surrounding area, in business since 1991. Services include Deep Cleaning, Move-In/Move-Out Cleaning, Recurring House Cleaning and Office Cleaning. Contact Express Pro Cleaning Services LLC at (916) 983-9274 for availability and pricing.",
+    "certifications": []
+  },
+  "reviews": [],
+  "tagline": "",
+  "industry": "janitorial",
+  "services": [
+    "House Cleaning",
+    "Deep Cleaning",
+    "Move-In / Move-Out Cleaning",
+    "Recurring House Cleaning",
+    "Office Cleaning",
+    "Post-Construction Cleaning",
+    "Carpet Cleaning",
+    "Window Cleaning",
+    "Blind Cleaning",
+    "Pressure Washing",
+    "Gutter Cleaning",
+    "Christmas Light Installation"
+  ],
+  "owner_name": "Anna Piontkevych",
+  "client_slug": "express-pro-cleaning-services",
+  "form_action": "https://db.pageone.cloud/functions/v1/leads/express-pro-cleaning-services",
+  "github_repo": "",
+  "web_sources": [],
+  "company_name": "Express Pro Cleaning Services",
+  "integrations": {
+    "geo": null,
+    "bbb_url": null,
+    "financing": null,
+    "accepts_sms": null,
+    "gbp_place_id": "ChIJMSEujaMo6QoRWnRzoKtdDIo",
+    "gbp_map_embed": null,
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJMSEujaMo6QoRWnRzoKtdDIo",
+    "elfsight_embed": null,
+    "scheduling_url": null,
+    "review_request_url": "https://search.google.com/local/writereview?placeid=ChIJMSEujaMo6QoRWnRzoKtdDIo",
+    "certification_links": []
+  },
+  "service_areas": [
+    "Sacramento",
+    "North Highlands",
+    "Rio Linda",
+    "Citrus Heights",
+    "Carmichael",
+    "Elk Grove",
+    "Roseville",
+    "Folsom"
+  ],
+  "address_public": false,
+  "business_hours": "Mon–Fri 7:00 AM–8:00 PM, Sat 7:00 AM–6:00 PM, Sun closed",
+  "image_curation": null,
+  "research_brief": {
+    "gbp": null,
+    "brief": {
+      "faqs": [
+        {
+          "a": "We service offices, retail stores, medical facilities, educational institutions, warehouses, and multi-tenant commercial buildings throughout Sacramento.",
+          "q": "What types of facilities do you service?"
+        },
+        {
+          "a": "Yes, we offer flexible scheduling including evening, weekend, and emergency same-day services to fit your business needs without disrupting operations.",
+          "q": "Can you accommodate after-hours or emergency cleaning?"
+        },
+        {
+          "a": "We prioritize eco-friendly, non-toxic products that are effective, safe for all occupants, and environmentally responsible.",
+          "q": "Are your cleaning products safe for employees and customers?"
+        },
+        {
+          "a": "All staff are professionally trained, uniformed, and background-checked. We conduct regular quality audits and stand behind our work with satisfaction guarantees.",
+          "q": "How do you ensure consistent quality?"
+        },
+        {
+          "a": "Packages are fully customizable based on your facility type and needs—from routine daily maintenance to deep cleaning, floor care, and specialized services. Contact us for a free assessment.",
+          "q": "What's included in your cleaning packages?"
+        }
+      ],
+      "about_angle": "Position Express Pro as the partner that understands Sacramento's diverse business community. Emphasize reliability, attention to detail, and commitment to supporting local businesses with consistent, professional cleaning. Highlight the team's training, background verification, and genuine care for client spaces. Frame cleaning as essential to business reputation and employee health.",
+      "hero_headline": "Professional Cleaning Services That Transform Your Space",
+      "differentiators": [
+        "Same-day/emergency cleaning availability and responsive scheduling",
+        "Eco-friendly, certified sustainable cleaning products and practices",
+        "Highly trained, background-checked, uniformed cleaning professionals",
+        "Customizable cleaning packages (daily, weekly, monthly, event-based)",
+        "Local Sacramento ownership with institutional knowledge of regional businesses",
+        "Transparent, guaranteed results with accountability guarantees or service credits"
+      ],
+      "hero_subheadline": "Reliable, eco-conscious janitorial services for Sacramento businesses that demand spotless results",
+      "tone_recommendation": "Professional yet approachable—authoritative enough to convey expertise and reliability, but warm and personable enough to feel like a trusted local partner. Avoid corporate jargon; use clear, direct language. Show that the team cares about the client's business success, not just completing tasks. Balance competence with human connection."
+    },
+    "competitors": [],
+    "generated_at": "2026-09-25T21:38:38.590Z",
+    "existing_site": null
+  },
+  "competitor_urls": [],
+  "phone_secondary": "",
+  "service_grouping": {
+    "cap": 8,
+    "tier": "standard",
+    "groups": [
+      {
+        "page": "Cleaning Services",
+        "services": [
+          "House Cleaning",
+          "Deep Cleaning",
+          "Move-In / Move-Out Cleaning",
+          "Recurring House Cleaning",
+          "Post-Construction Cleaning",
+          "Carpet Cleaning",
+          "Window Cleaning",
+          "Blind Cleaning",
+          "Pressure Washing"
+        ]
+      },
+      {
+        "page": "Seasonal Services",
+        "services": [
+          "Office Cleaning",
+          "Christmas Light Installation"
+        ]
+      },
+      {
+        "page": "Gutter Cleaning",
+        "solo": true,
+        "services": [
+          "Gutter Cleaning"
+        ]
+      }
+    ],
+    "grouped_count": 3,
+    "original_count": 12
+  },
+  "lead_notification_email": "expressprocleanings@gmail.com",
+  "lead_notification_phone": "(916) 983-9274",
+  "google_business_profile_url": "https://www.google.com/maps/place/?q=place_id:ChIJMSEujaMo6QoRWnRzoKtdDIo"
+}
