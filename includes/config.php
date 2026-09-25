@@ -190,3 +190,8 @@ $cssVersion = '1';
  * p1_attribution_fields(). Must load before any output. Do not edit attribution.php.
  * ------------------------------------------------------------------------- */
 require_once __DIR__ . '/attribution.php';
+
+/* ---------------------------------------------------------------------------
+ * HELPER FUNCTIONS
+ * ------------------------------------------------------------------------- */
+require_once __DIR__ . '/functions.php';

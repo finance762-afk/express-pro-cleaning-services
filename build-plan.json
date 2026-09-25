@@ -80,13 +80,30 @@
     }
   },
   "design": {
-    "fonts": {},
-    "notes": "",
+    "archetype": "warm-human",
+    "fonts": {
+      "heading": "Bricolage Grotesque",
+      "body": "Figtree",
+      "accent": "Barlow Condensed"
+    },
+    "notes": "Family business since 1991, warm service-oriented archetype. Logo is navy blue + red combination mark (3.26:1 aspect ratio). White glassmorphism nav with 110px logo height.",
     "style": "modern",
     "colors": {
-      "extracted_from_logo": true
+      "extracted_from_logo": true,
+      "primary": "#1f2428",
+      "secondary": "#5a6570",
+      "accent": "#c8461a"
     },
-    "logo_analysis": {}
+    "logo_analysis": {
+      "aspect_ratio": 3.26,
+      "type": "wordmark",
+      "nav_height": 110,
+      "colors": {
+        "primary": "navy blue",
+        "secondary": "red",
+        "background": "transparent"
+      }
+    }
   },
   "domain": "express-pro-cleaning-services",
   "phases": [
