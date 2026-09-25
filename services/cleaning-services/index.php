@@ -55,7 +55,7 @@ $faqs = [
     ],
     [
         'q' => 'What areas around Sacramento do you serve?',
-        'a' => 'We serve Sacramento and surrounding communities within about 30 miles: North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. Call (916) 983-9274 to confirm we cover your area.',
+        'a' => 'We serve Sacramento and surrounding communities within roughly 80 miles: North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. Call (916) 983-9274 to confirm we cover your area.',
     ],
 ];
 

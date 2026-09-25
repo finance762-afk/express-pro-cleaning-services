@@ -425,7 +425,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container">
     <h2>Serving Greater Sacramento</h2>
     <p class="section-intro">
-      Our service area spans 30 miles around Sacramento, covering these eight communities and surrounding
+      Our service area spans roughly 80 miles around Sacramento, covering these eight communities and surrounding
       areas. If you're located near any of these cities, we can serve you.
     </p>
     <div class="map-placeholder">

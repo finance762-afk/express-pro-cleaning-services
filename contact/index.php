@@ -329,7 +329,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
             <span>Service Areas</span>
           </h3>
           <p style="color: var(--color-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.8rem;">
-            Express Pro Cleaning Services serves the greater Sacramento area within approximately 30 miles:
+            Express Pro Cleaning Services serves the greater Sacramento area within roughly 80 miles:
           </p>
           <ul class="service-areas-list">
             <?php foreach ($serviceAreas as $area): ?>
