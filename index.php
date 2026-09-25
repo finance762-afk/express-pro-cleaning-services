@@ -17,7 +17,7 @@ $pageDescription = $metaDescription;
 $faqs = [
     [
         'q' => 'What areas around Sacramento does Express Pro Cleaning Services cover?',
-        'a' => 'Express Pro Cleaning Services covers Sacramento and the surrounding region, including North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. If you are within about 30 miles of Sacramento, call (916) 983-9274 and we will confirm availability.',
+        'a' => 'Express Pro Cleaning Services covers Sacramento and the surrounding region, including North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. If you are within roughly 80 miles of Sacramento, call (916) 983-9274 and we will confirm availability.',
     ],
     [
         'q' => 'How long has Express Pro Cleaning Services been in business?',
