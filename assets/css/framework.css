@@ -38,12 +38,14 @@
   --color-primary-rgb: 31, 36, 40;
   --color-primary-dark: color-mix(in srgb, #1f2428 78%, black);
   --color-primary-deep: color-mix(in srgb, #1f2428 62%, black);
+  --color-primary-light: color-mix(in srgb, #1f2428 45%, white);
   --color-secondary: #5a6570;
   --color-secondary-rgb: 90, 101, 112;
   --color-accent: #c8461a;
   --color-accent-rgb: 200, 70, 26;
   --color-accent-dark: color-mix(in srgb, #c8461a 55%, black);      /* accent as TEXT on light — 55% keeps warm accents ≥4.5:1 on paper (2026-09-04) */
   --color-accent-bright: color-mix(in srgb, #c8461a 80%, white);    /* eyebrows on dark bands */
+  --color-accent-light: color-mix(in srgb, #c8461a 65%, white);
 
   /* Ground and ink — warm, hue-biased neutrals (never pure grey) */
   --color-paper: #f6f3ec;

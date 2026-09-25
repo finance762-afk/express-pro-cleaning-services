@@ -11,6 +11,7 @@ $currentPage     = 'about';
 $canonicalUrl    = $siteUrl . '/about/';
 $pageTitle       = 'About Us | ' . $siteName . ' | Family-Owned Since 1991';
 $metaDescription = 'Express Pro Cleaning Services is a family-owned Sacramento cleaning business since 1991. Learn about our story, values, and commitment to quality service in English, Ukrainian and Russian.';
+$pageDescription = $metaDescription;
 
 // Breadcrumb schema
 $breadcrumbs = [

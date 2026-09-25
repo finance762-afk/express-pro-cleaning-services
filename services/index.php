@@ -11,6 +11,7 @@ $currentPage     = 'services';
 $canonicalUrl    = $siteUrl . '/services/';
 $pageTitle       = 'Cleaning Services in Sacramento, CA | ' . $siteName;
 $metaDescription = 'Complete cleaning services for Sacramento homes and businesses: house cleaning, deep cleans, move-outs, office cleaning, gutter cleaning and more. Family-owned since 1991. Call ' . formatPhone($phone) . '.';
+$pageDescription = $metaDescription;
 
 // Service categories with metadata
 $serviceCategories = [

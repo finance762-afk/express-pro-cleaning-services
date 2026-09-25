@@ -11,6 +11,7 @@ $currentPage     = 'contact';
 $canonicalUrl    = $siteUrl . '/contact/';
 $pageTitle       = 'Contact Us | ' . $siteName . ' | Sacramento, CA';
 $metaDescription = 'Contact Express Pro Cleaning Services for a free cleaning estimate in Sacramento. Call ' . $phone . ' or fill out our quick form. Same-day response guaranteed.';
+$pageDescription = $metaDescription;
 
 // Breadcrumb schema
 $breadcrumbs = [

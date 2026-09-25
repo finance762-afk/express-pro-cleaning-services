@@ -11,6 +11,7 @@ $currentPage     = '404';
 $noindex         = true; // Do not index 404 pages
 $pageTitle       = 'Page Not Found | ' . $siteName;
 $metaDescription = 'The page you are looking for could not be found. Return to the homepage or contact Express Pro Cleaning Services for assistance.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/404';
 
 http_response_code(404);

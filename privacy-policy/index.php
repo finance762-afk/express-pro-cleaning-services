@@ -10,6 +10,7 @@ $pageType        = 'other';
 $currentPage     = 'privacy-policy';
 $pageTitle       = 'Privacy Policy | ' . $siteName;
 $metaDescription = 'How Express Pro Cleaning Services collects, uses, and protects your information. Privacy practices for our website and contact forms.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $lastUpdated     = date('F j, Y');
 

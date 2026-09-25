@@ -10,6 +10,7 @@ $pageType        = 'other';
 $currentPage     = 'accessibility';
 $pageTitle       = 'Accessibility Statement | ' . $siteName;
 $metaDescription = 'Our commitment to digital accessibility and WCAG 2.1 AA conformance for the Express Pro Cleaning Services website.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $lastUpdated     = date('F j, Y');
 

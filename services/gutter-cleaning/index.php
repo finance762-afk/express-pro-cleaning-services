@@ -12,6 +12,7 @@ $currentPage     = 'services';
 $canonicalUrl    = $siteUrl . '/services/gutter-cleaning/';
 $pageTitle       = 'Gutter Cleaning Sacramento, CA | ' . $siteName;
 $metaDescription = 'Professional gutter cleaning in Sacramento — clear debris and blockages before the rainy season. Protect your roof, fascia and foundation. Call ' . formatPhone($phone) . ' for a free quote.';
+$pageDescription = $metaDescription;
 
 // Services covered on this page
 $pageServices = [
@@ -29,12 +30,12 @@ $faqs = [
         'a' => 'Most Sacramento homeowners clean gutters twice a year: once in late fall after leaves drop and once in early spring before the heaviest rains. Homes near oak trees or under heavy canopy may need quarterly cleanings to stay clear.',
     ],
     [
-        'q' => 'What happens if I don't clean my gutters?',
+        'q' => 'What happens if I don\'t clean my gutters?',
         'a' => 'Clogged gutters overflow during rain, pouring water down the fascia and siding instead of into downspouts. That water damages the fascia boards, rots the roof edge, floods the foundation and can cause basement or crawlspace leaks.',
     ],
     [
         'q' => 'Do you clean downspouts too?',
-        'a' => 'Yes. Express Pro Cleaning Services clears gutters and flushes downspouts to make sure water flows all the way to the ground. If a downspout is jammed with compacted debris, we clear it by hand or with a plumber's snake.',
+        'a' => 'Yes. Express Pro Cleaning Services clears gutters and flushes downspouts to make sure water flows all the way to the ground. If a downspout is jammed with compacted debris, we clear it by hand or with a plumber\'s snake.',
     ],
     [
         'q' => 'Will you haul away the debris or leave it on the ground?',
@@ -46,7 +47,7 @@ $faqs = [
     ],
     [
         'q' => 'When is the best time to schedule gutter cleaning?',
-        'a' => 'Schedule gutter cleaning in late October or November — after the leaves drop but before Sacramento's rainy season begins in earnest. Booking early in the season gives you better availability than waiting until December when everyone remembers the gutters.',
+        'a' => 'Schedule gutter cleaning in late October or November — after the leaves drop but before Sacramento\'s rainy season begins in earnest. Booking early in the season gives you better availability than waiting until December when everyone remembers the gutters.',
     ],
 ];
 

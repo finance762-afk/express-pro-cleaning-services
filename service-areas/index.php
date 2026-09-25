@@ -5,6 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 // Page setup
 $pageTitle = 'Service Areas — Professional Cleaning in Sacramento & Surrounding Communities | ' . $siteName;
 $metaDescription = 'Express Pro Cleaning Services serves Sacramento, North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville, and Folsom. Family-owned cleaning company since 1991. Call ' . $phone . ' for a free estimate.';
+$pageDescription = $metaDescription;
 $canonicalUrl = $siteUrl . '/service-areas/';
 $pageType = 'other';
 $currentPage = 'service-areas';

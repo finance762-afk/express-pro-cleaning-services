@@ -11,6 +11,7 @@ $currentPage     = 'thank-you';
 $noindex         = true; // Do not index thank-you pages
 $pageTitle       = 'Thank You | ' . $siteName;
 $metaDescription = 'Thank you for contacting Express Pro Cleaning Services. We will respond to your inquiry within 24 hours.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/thank-you/';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';

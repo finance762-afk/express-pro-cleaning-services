@@ -11,6 +11,7 @@ $currentPage     = 'home';
 $canonicalUrl    = $siteUrl . '/';
 $pageTitle       = 'House & Office Cleaning in Sacramento, CA | ' . $siteName;
 $metaDescription = 'Family-owned house & office cleaning in Sacramento since 1991. Deep cleans, move-outs, recurring service, carpets, windows and more. Call ' . $phone . ' for a free estimate.';
+$pageDescription = $metaDescription;
 
 // FAQ content (drives the visible FAQ section AND the FAQPage schema)
 $faqs = [
@@ -107,7 +108,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <span class="eyebrow">Sacramento, CA · Family-owned since 1991</span>
         <h1 class="hero-title">Family-run house cleaning in Sacramento</h1>
         <p class="hero-answer">
-          Express Pro Cleaning Services has cleaned Sacramento homes and offices since 1991 — deep cleans, move-outs, recurring visits and more, from a family team fluent in English, Ukrainian and Russian.
+          Express Pro Cleaning Services has cleaned Sacramento homes and offices since 1991 — deep cleans, move-outs, recurring visits, carpets, windows and gutter cleaning from a family team fluent in English, Ukrainian and Russian. We handle residential and commercial properties with flexible scheduling and same-day quotes.
         </p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>

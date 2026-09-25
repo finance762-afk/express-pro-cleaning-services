@@ -10,6 +10,7 @@ $pageType        = 'other';
 $currentPage     = 'terms';
 $pageTitle       = 'Terms of Service | ' . $siteName;
 $metaDescription = 'Terms of Service governing use of the Express Pro Cleaning Services website and engagement of our cleaning services.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/terms/';
 $lastUpdated     = date('F j, Y');
 

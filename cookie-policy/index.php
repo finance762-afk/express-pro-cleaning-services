@@ -10,6 +10,7 @@ $pageType        = 'other';
 $currentPage     = 'cookie-policy';
 $pageTitle       = 'Cookie Policy | ' . $siteName;
 $metaDescription = 'How Express Pro Cleaning Services uses cookies and tracking technologies on our website.';
+$pageDescription = $metaDescription;
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $lastUpdated     = date('F j, Y');
 

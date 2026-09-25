@@ -12,6 +12,7 @@ $currentPage     = 'services';
 $canonicalUrl    = $siteUrl . '/services/cleaning-services/';
 $pageTitle       = 'House Cleaning Services Sacramento, CA | ' . $siteName;
 $metaDescription = 'Deep cleans, move-outs, recurring cleaning, carpets, windows and more for Sacramento homes. Family-owned since 1991. Call ' . formatPhone($phone) . ' for a free estimate.';
+$pageDescription = $metaDescription;
 
 // Services covered on this page
 $pageServices = [

@@ -12,6 +12,7 @@ $currentPage     = 'services';
 $canonicalUrl    = $siteUrl . '/services/seasonal-services/';
 $pageTitle       = 'Office Cleaning & Christmas Lights Sacramento | ' . $siteName;
 $metaDescription = 'Office cleaning and Christmas light installation for Sacramento businesses and homes. Flexible scheduling, professional results. Call ' . formatPhone($phone) . ' for a free estimate.';
+$pageDescription = $metaDescription;
 
 // Services covered on this page
 $pageServices = [
