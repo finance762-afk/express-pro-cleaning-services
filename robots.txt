@@ -1,0 +1,34 @@
+# robots.txt — Express Pro Cleaning Services
+# Allow all crawlers (AI crawlers explicitly welcomed for AEO)
+
+User-agent: *
+Allow: /
+
+# Block backend directories
+Disallow: /includes/
+Disallow: /assets/js/
+
+# AI crawlers (ChatGPT, Claude, Bard, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://express-pro-cleaning-services.pageone.cloud/sitemap.xml
