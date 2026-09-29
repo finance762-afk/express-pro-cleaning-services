@@ -150,9 +150,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       Address: <?php echo e($address['street']); ?>, <?php echo e($address['city']); ?>, <?php echo e($address['state']); ?> <?php echo e($address['zip']); ?>
     </p>
 
-    <div class="legal-disclaimer">
-      This Accessibility Statement is provided as a general template. We recommend reviewing this document with a licensed <?php echo $companyState; ?> attorney before publication to ensure compliance with current state and federal law.
-    </div>
 
   </article>
 
