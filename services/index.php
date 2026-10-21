@@ -10,48 +10,14 @@ $pageType        = 'other';
 $currentPage     = 'services';
 $canonicalUrl    = $siteUrl . '/services/';
 $pageTitle       = 'Cleaning Services in Sacramento, CA | ' . $siteName;
-$metaDescription = 'Complete cleaning services for Sacramento homes and businesses: house cleaning, deep cleans, move-outs, office cleaning, gutter cleaning and more. Family-owned since 1991. Call ' . formatPhone($phone) . '.';
+$metaDescription = 'Five services for Sacramento homes and businesses: window, blind and screen cleaning, house cleaning, gutter and roof cleaning, pressure/soft washing and Christmas lights. Family-owned since 1998. Call or text ' . formatPhone($phone) . '.';
 $pageDescription = $metaDescription;
 
-// Service categories with metadata
-$serviceCategories = [
-    [
-        'name'        => 'Cleaning Services',
-        'slug'        => 'cleaning-services',
-        'icon'        => 'home',
-        'description' => 'Residential and specialty cleaning across Sacramento — house cleaning, deep cleans, move-in/move-out turnovers, recurring maintenance, plus carpet, window, blind and pressure washing.',
-        'services'    => [
-            'House Cleaning',
-            'Deep Cleaning',
-            'Move-In / Move-Out Cleaning',
-            'Recurring House Cleaning',
-            'Post-Construction Cleaning',
-            'Carpet Cleaning',
-            'Window Cleaning',
-            'Blind Cleaning',
-            'Pressure Washing',
-        ],
-    ],
-    [
-        'name'        => 'Seasonal Services',
-        'slug'        => 'seasonal-services',
-        'icon'        => 'snowflake',
-        'description' => 'Seasonal and commercial add-ons for Sacramento homes and businesses, including office cleaning and professional Christmas light installation.',
-        'services'    => [
-            'Office Cleaning',
-            'Christmas Light Installation',
-        ],
-    ],
-    [
-        'name'        => 'Gutter Cleaning',
-        'slug'        => 'gutter-cleaning',
-        'icon'        => 'droplets',
-        'description' => 'Professional gutter cleaning for Sacramento homes — clearing debris and blockages to protect roofs, fascia and foundations before the rainy season.',
-        'services'    => [
-            'Gutter Cleaning',
-        ],
-    ],
-];
+// Service categories — the client's five categories (2026-10-10), read from config so nav/sitemap/hub agree.
+$iconBySlug = ['window-cleaning' => 'sun', 'house-cleaning' => 'home', 'gutter-roof-cleaning' => 'droplets', 'pressure-washing' => 'waves', 'seasonal-services' => 'snowflake'];
+$serviceCategories = array_map(function ($svc) use ($iconBySlug) {
+    return ['name' => $svc['name'], 'slug' => $svc['slug'], 'icon' => $iconBySlug[$svc['slug']] ?? 'check', 'description' => $svc['description'], 'services' => $svc['services']];
+}, $services);
 
 // @graph schema: BreadcrumbList
 $schemaMarkup = [
@@ -205,14 +171,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow">Sacramento, CA</span>
       <h1 class="hero-title">Cleaning services in Sacramento</h1>
       <p class="hero-answer">
-        Express Pro Cleaning Services handles the full range of residential and commercial cleaning across Sacramento: house cleaning, deep cleans, move-outs, recurring service, office cleaning, gutter cleaning and more — from a family team serving the area since 1991.
+        Express Pro Cleaning Services offers five services across Sacramento: window, blind and screen cleaning (with repairs), house cleaning, gutter and roof cleaning including solar panels, pressure and soft washing, and Christmas light installation — from a family team serving the area since 1989 and family-owned since 1998.
       </p>
       <div class="hero-actions">
         <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
-        <a class="link-call" href="tel:<?php echo $phoneRaw; ?>">
-          <?php echo icon('phone', 18); ?>
-          <span>or call <?php echo formatPhone($phone); ?></span>
-        </a>
+        <?php echo phoneCallText(18, 'link-call'); ?>
       </div>
     </div>
   </div>
@@ -225,11 +188,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">What We Do</span>
       <h2>What cleaning services can you book with <span class="text-accent">Express Pro</span>?</h2>
       <p class="answer-block">
-        Express Pro Cleaning Services organizes its work into three categories: residential cleaning (house cleaning, deep cleans, move-outs, carpets, windows, pressure washing), seasonal services (office cleaning and Christmas lights), and gutter cleaning. Each category has its own service page with details, pricing and FAQ.
+        Express Pro Cleaning Services organizes its work into five categories: window cleaning services (window, blind and screen cleaning plus repairs), house cleaning services (deep, move-in/move-out, post-construction, recurring), gutter and roof cleaning (gutters, solar panels, roof debris), pressure and soft washing (house, roof, driveway, patio, porches, decks, fences), and seasonal Christmas light installation and takedown. Each has its own page with details and FAQ.
       </p>
     </div>
 
-    <div class="services-overview">
+    <div class="services-overview" data-p1-dynamic>
       <?php foreach ($serviceCategories as $i => $cat): ?>
       <article class="category-card reveal-up reveal-delay-<?php echo min($i + 1, 3); ?>">
         <div class="category-header">
@@ -267,7 +230,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Why Express Pro</span>
       <h2>Why do Sacramento homeowners and businesses choose <span class="text-accent">Express Pro Cleaning Services</span>?</h2>
       <p class="answer-block">
-        Express Pro is family-owned and hands-on — no franchise system, no rotating crews — with 35 years cleaning Sacramento homes and offices. We bring our own supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
+        Express Pro is family-owned and hands-on — no franchise system, no rotating crews. The company has cleaned Sacramento homes and businesses since 1989 and has been in the same family since 1998. We bring our own supplies, we speak English, Ukrainian and Russian, and we make it right before we leave the job.
       </p>
     </div>
 
@@ -284,8 +247,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <div class="why-item__icon">
           <?php echo icon('calendar-check', 32); ?>
         </div>
-        <h3>35 years in Sacramento</h3>
-        <p>Started in 1991 as Express Mini Blind & Window Cleaning. Three decades later, still family-run, still local.</p>
+        <h3>Family-owned since 1998</h3>
+        <p>Started in 1989 as Express Mini Blind &amp; Window Cleaning; run by the same family since 1998. Still local, still hands-on.</p>
       </div>
 
       <div class="why-item reveal-up reveal-delay-3">
@@ -312,13 +275,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Get a free cleaning estimate for your Sacramento home or business</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear, no-obligation quote. Serving Sacramento since 1991.</p>
+      <p>Call or text <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear, no-obligation quote. Serving Sacramento since 1989.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-primary btn-lg" data-open-estimate>Get my free estimate</button>
-        <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">
-          <?php echo icon('phone', 20); ?>
-          <span>Call now</span>
-        </a>
+        <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg"><?php echo icon('phone', 20); ?><span>Call now</span></a>
+        <a href="sms:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg"><?php echo icon('message-square', 20); ?><span>or TEXT us</span></a>
       </div>
     </div>
   </div>

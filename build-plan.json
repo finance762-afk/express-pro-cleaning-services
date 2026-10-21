@@ -6,51 +6,67 @@
     "secondary_keywords": [
       "deep cleaning Sacramento CA",
       "move out cleaning Sacramento",
-      "office cleaning Sacramento",
-      "window cleaning Sacramento"
+      "window cleaning Sacramento",
+      "pressure washing Sacramento",
+      "gutter cleaning Sacramento CA"
     ]
   },
   "tier": "standard",
   "email": "expressprocleanings@gmail.com",
   "pages": [
     {
-      "slug": "cleaning-services",
+      "slug": "window-cleaning",
       "type": "service_group",
-      "title": "Cleaning Services in Sacramento, CA",
-      "sections": "hero, service_cards_grid, individual_service_details, process, cta",
+      "title": "Window Cleaning Services in Sacramento, CA",
       "services": [
-        "House Cleaning",
-        "Deep Cleaning",
-        "Move-In / Move-Out Cleaning",
-        "Recurring House Cleaning",
-        "Post-Construction Cleaning",
-        "Carpet Cleaning",
         "Window Cleaning",
         "Blind Cleaning",
-        "Pressure Washing"
+        "Screen Cleaning",
+        "Screen & Blind Repairs"
       ],
-      "primary_keyword": "move-in / move-out cleaning Sacramento CA"
+      "primary_keyword": "window cleaning Sacramento"
+    },
+    {
+      "slug": "house-cleaning",
+      "type": "service_group",
+      "title": "House Cleaning Services in Sacramento, CA",
+      "services": [
+        "Deep Cleaning",
+        "Move-In / Move-Out Cleaning",
+        "Post-Construction Cleaning",
+        "Recurring Maintenance Cleaning"
+      ],
+      "primary_keyword": "house cleaning Sacramento"
+    },
+    {
+      "slug": "gutter-roof-cleaning",
+      "type": "service_group",
+      "title": "Gutter and Roof Cleaning in Sacramento, CA",
+      "services": [
+        "Gutter Cleaning",
+        "Solar Panel Cleaning",
+        "Roof Debris Cleaning"
+      ],
+      "primary_keyword": "gutter cleaning Sacramento CA"
+    },
+    {
+      "slug": "pressure-washing",
+      "type": "service_group",
+      "title": "Pressure / Soft Washing in Sacramento, CA",
+      "services": [
+        "Pressure Washing",
+        "Soft Washing"
+      ],
+      "primary_keyword": "pressure washing Sacramento"
     },
     {
       "slug": "seasonal-services",
       "type": "service_group",
       "title": "Seasonal Services in Sacramento, CA",
-      "sections": "hero, service_cards_grid, individual_service_details, process, cta",
       "services": [
-        "Office Cleaning",
-        "Christmas Light Installation"
+        "Christmas Light Installation & Takedown"
       ],
       "primary_keyword": "christmas light installation Sacramento CA"
-    },
-    {
-      "slug": "gutter-cleaning",
-      "type": "service",
-      "title": "Gutter Cleaning in Sacramento, CA",
-      "sections": "hero, service_details, process, testimonials, cta",
-      "services": [
-        "Gutter Cleaning"
-      ],
-      "primary_keyword": "gutter cleaning Sacramento CA"
     }
   ],
   "phone": "(916) 983-9274",
@@ -86,7 +102,7 @@
       "body": "Figtree",
       "accent": "Barlow Condensed"
     },
-    "notes": "Family business since 1991, warm service-oriented archetype. Logo is navy blue + red combination mark (3.26:1 aspect ratio). White glassmorphism nav with 110px logo height.",
+    "notes": "Family business (founded 1989, family-owned since 1998), warm service-oriented archetype. Logo is navy blue + red combination mark (3.26:1 aspect ratio). White glassmorphism nav with 110px logo height.",
     "style": "modern",
     "colors": {
       "extracted_from_logo": true,
@@ -141,31 +157,35 @@
   },
   "content": {
     "usps": [
-      "Family owned since 1991",
-      "Formerly Express Mini Blind & Window Cleaning",
+      "Family-owned since 1998",
+      "Home of the original Express Mini Blind & Window Cleaning",
       "Service in English, Ukrainian and Russian"
     ],
-    "years": 35,
+    "years": 37,
     "insurance": "",
-    "description": "Express Pro Cleaning Services LLC is a local business serving Sacremento, CA and the surrounding area, in business since 1991. Services include Deep Cleaning, Move-In/Move-Out Cleaning, Recurring House Cleaning and Office Cleaning. Contact Express Pro Cleaning Services LLC at (916) 983-9274 for availability and pricing.",
-    "certifications": []
+    "description": "Express Pro Cleaning Services, home of the original Express Mini Blind & Window Cleaning, has proudly served homes and businesses throughout Sacramento and the surrounding areas since 1989. What began as a specialty blind and window cleaning business has grown to offer a wide range of residential and commercial cleaning services. As a family-owned business (since 1998), we continue to provide the dependable, personalized service our customers have trusted for years.",
+    "certifications": [],
+    "founded": 1989,
+    "family_owned_since": 1998
   },
   "reviews": [],
-  "tagline": "",
+  "tagline": "Family-owned cleaning services in Sacramento and surrounding areas",
   "industry": "janitorial",
   "services": [
-    "House Cleaning",
-    "Deep Cleaning",
-    "Move-In / Move-Out Cleaning",
-    "Recurring House Cleaning",
-    "Office Cleaning",
-    "Post-Construction Cleaning",
-    "Carpet Cleaning",
     "Window Cleaning",
     "Blind Cleaning",
-    "Pressure Washing",
+    "Screen Cleaning",
+    "Screen & Blind Repairs",
+    "Deep Cleaning",
+    "Move-In / Move-Out Cleaning",
+    "Post-Construction Cleaning",
+    "Recurring Maintenance Cleaning",
     "Gutter Cleaning",
-    "Christmas Light Installation"
+    "Solar Panel Cleaning",
+    "Roof Debris Cleaning",
+    "Pressure Washing",
+    "Soft Washing",
+    "Christmas Light Installation & Takedown"
   ],
   "owner_name": "Anna Piontkevych",
   "client_slug": "express-pro-cleaning-services",
@@ -234,40 +254,56 @@
   "service_grouping": {
     "cap": 8,
     "tier": "standard",
+    "client_defined": true,
     "groups": [
       {
-        "page": "Cleaning Services",
+        "page": "Window Cleaning Services",
         "services": [
-          "House Cleaning",
-          "Deep Cleaning",
-          "Move-In / Move-Out Cleaning",
-          "Recurring House Cleaning",
-          "Post-Construction Cleaning",
-          "Carpet Cleaning",
           "Window Cleaning",
           "Blind Cleaning",
-          "Pressure Washing"
+          "Screen Cleaning",
+          "Screen & Blind Repairs"
+        ]
+      },
+      {
+        "page": "House Cleaning Services",
+        "services": [
+          "Deep Cleaning",
+          "Move-In / Move-Out Cleaning",
+          "Post-Construction Cleaning",
+          "Recurring Maintenance Cleaning"
+        ]
+      },
+      {
+        "page": "Gutter and Roof Cleaning",
+        "services": [
+          "Gutter Cleaning",
+          "Solar Panel Cleaning",
+          "Roof Debris Cleaning"
+        ]
+      },
+      {
+        "page": "Pressure / Soft Washing",
+        "services": [
+          "Pressure Washing",
+          "Soft Washing"
         ]
       },
       {
         "page": "Seasonal Services",
         "services": [
-          "Office Cleaning",
-          "Christmas Light Installation"
-        ]
-      },
-      {
-        "page": "Gutter Cleaning",
-        "solo": true,
-        "services": [
-          "Gutter Cleaning"
+          "Christmas Light Installation & Takedown"
         ]
       }
     ],
-    "grouped_count": 3,
-    "original_count": 12
+    "grouped_count": 5,
+    "original_count": 14
   },
   "lead_notification_email": "expressprocleanings@gmail.com",
   "lead_notification_phone": "(916) 983-9274",
-  "google_business_profile_url": "https://www.google.com/maps/place/?q=place_id:ChIJMSEujaMo6QoRWnRzoKtdDIo"
+  "google_business_profile_url": "https://www.google.com/maps/place/?q=place_id:ChIJMSEujaMo6QoRWnRzoKtdDIo",
+  "not_offered": [
+    "Carpet Cleaning"
+  ],
+  "revision_2026_10_21": "Client change rounds of 2026-10-10 applied: carpet removed everywhere, post-construction added, five client-defined categories, founded 1989 / family-owned 1998, call-or-text phone display."
 }

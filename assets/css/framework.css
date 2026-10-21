@@ -736,3 +736,315 @@ html.js-anim .reveal-d1, html.js-anim .reveal-delay-1 { transition-delay: .08s }
 }
 
 @media (max-width: 1000px) { :root { --nav-height: 96px; --navbar-height: 96px; } }
+
+/* ============================================================================
+   Service page compositions (moved from per-page <style> blocks, 2026-10-21)
+   ============================================================================ */
+/* ============================================================================
+   Cleaning Services page — composition
+   ============================================================================ */
+
+/* Problem/pain section with bento card grid */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+.problem-card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  transition: var(--transition);
+}
+.problem-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.problem-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+  color: white;
+  margin-bottom: var(--space-sm);
+}
+.problem-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-ink);
+}
+.problem-card p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+/* Service breakdown with checklist */
+.service-breakdown {
+  display: grid;
+  gap: var(--space-xl);
+}
+.service-category {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-md);
+}
+.service-category h3 {
+  font-size: 1.35rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-ink);
+}
+.service-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-xs);
+}
+.service-category li {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+.service-category li svg {
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  margin-top: 2px;
+}
+
+/* Process timeline */
+.process-timeline {
+  position: relative;
+  padding-left: var(--space-xl);
+  border-left: 2px solid var(--color-border);
+}
+.process-step {
+  position: relative;
+  margin-bottom: var(--space-xl);
+}
+.process-step::before {
+  content: attr(data-step);
+  position: absolute;
+  left: calc(-1 * var(--space-xl) - 18px);
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-family: var(--font-accent);
+  font-size: 0.95rem;
+}
+.process-step h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-ink);
+}
+.process-step p {
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Why choose cards */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+.why-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  border-left: 4px solid var(--color-accent);
+}
+.why-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-ink);
+}
+.why-card p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .problem-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-timeline {
+    padding-left: var(--space-lg);
+  }
+  .process-step::before {
+    left: calc(-1 * var(--space-lg) - 14px);
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+}
+/* ============================================================================
+   Gutter Cleaning page — composition
+   ============================================================================ */
+
+/* Damage scenarios cards */
+.damage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+.damage-card {
+  position: relative;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border-top: 4px solid var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.damage-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.damage-card__icon {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+.damage-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-ink);
+}
+.damage-card p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* What we clean checklist */
+.clean-checklist {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border-left: 4px solid var(--color-accent);
+}
+.clean-checklist h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-ink);
+}
+.clean-checklist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-sm);
+}
+.clean-checklist li {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+.clean-checklist li svg {
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  margin-top: 3px;
+}
+
+/* Seasonal timing banner */
+.timing-banner {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+.timing-banner h3 {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-sm);
+  color: white;
+}
+.timing-banner p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 60ch;
+  margin: 0 auto var(--space-md);
+  color: rgba(255,255,255,0.95);
+}
+.timing-banner .btn {
+  margin-top: var(--space-sm);
+}
+
+/* Process steps horizontal */
+.process-horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+.process-card {
+  text-align: center;
+  padding: var(--space-lg);
+}
+.process-card__number {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+.process-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-ink);
+}
+.process-card p {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .damage-grid,
+  .process-horizontal {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Call-or-text phone display (client request 2026-10-20) */
+.phone-call-text { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .35em; }
+.phone-call-text a { color: inherit; text-decoration: none; font-weight: 600; }
+.phone-call-text a:hover { text-decoration: underline; }
+.phone-call-text .phone-or { opacity: .8; font-weight: 500; }
+.navbar-cta .btn-text { font-size: .85rem; font-weight: 600; color: var(--color-primary); text-decoration: none; white-space: nowrap; margin-right: .5rem; }
+.navbar-cta .btn-text:hover { text-decoration: underline; }
+@media (max-width: 1100px) { .navbar-cta .btn-text { display: none; } }

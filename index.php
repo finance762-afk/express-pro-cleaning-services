@@ -9,31 +9,31 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'home';
 $currentPage     = 'home';
 $canonicalUrl    = $siteUrl . '/';
-$pageTitle       = 'House & Office Cleaning in Sacramento, CA | ' . $siteName;
-$metaDescription = 'Family-owned house & office cleaning in Sacramento since 1991. Deep cleans, move-outs, recurring service, carpets, windows and more. Call ' . $phone . ' for a free estimate.';
+$pageTitle       = 'Window, House & Exterior Cleaning in Sacramento, CA | ' . $siteName;
+$metaDescription = 'Family-owned cleaning services in Sacramento and surrounding areas since 1998: window, blind and screen cleaning, house cleaning, gutter and roof cleaning, pressure washing and Christmas lights. Call or text ' . $phone . '.';
 $pageDescription = $metaDescription;
 
 // FAQ content (drives the visible FAQ section AND the FAQPage schema)
 $faqs = [
     [
         'q' => 'What areas around Sacramento does Express Pro Cleaning Services cover?',
-        'a' => 'Express Pro Cleaning Services covers Sacramento and the surrounding region, including North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. If you are within roughly 80 miles of Sacramento, call (916) 983-9274 and we will confirm availability.',
+        'a' => 'Express Pro Cleaning Services covers Sacramento and the surrounding region, including North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. If you are within about 30 miles of Sacramento, call or text (916) 983-9274 and we will confirm availability.',
     ],
     [
         'q' => 'How long has Express Pro Cleaning Services been in business?',
-        'a' => 'Express Pro Cleaning Services has cleaned Sacramento homes and businesses since 1991. The company started as Express Mini Blind & Window Cleaning and grew into a full-service residential and commercial cleaning business run by the same local family.',
+        'a' => 'Express Pro Cleaning Services was founded in 1989 as Express Mini Blind & Window Cleaning. In 1998 a family member took the business over, and it has been family-owned ever since — growing from blinds and glass into house cleaning, gutter and roof cleaning, pressure washing and holiday lighting.',
     ],
     [
         'q' => 'Do you offer recurring house cleaning?',
-        'a' => 'Yes. Express Pro Cleaning Services builds recurring house cleaning on a weekly, every-other-week or monthly schedule, and keeps the same routine each visit so your home stays consistently clean. Call to set a plan that fits your household.',
+        'a' => 'Yes. Express Pro Cleaning Services builds recurring maintenance cleaning on a weekly, every-other-week or monthly schedule, and keeps the same team and routine each visit so your home stays consistently clean. Call or text to set a plan that fits your household.',
     ],
     [
         'q' => 'Can you handle move-in and move-out cleaning?',
         'a' => 'Yes. Move-in and move-out cleaning is one of our most-requested services in Sacramento. We deep clean empty homes and apartments — kitchens, bathrooms, floors, insides of cabinets and appliances — so the space is ready for a walkthrough or new tenants.',
     ],
     [
-        'q' => 'Do you clean offices and commercial spaces?',
-        'a' => 'Yes. Express Pro Cleaning Services cleans offices and commercial spaces around Sacramento with flexible scheduling, including evenings and weekends so we work around your operating hours rather than through them.',
+        'q' => 'Do you clean solar panels and roofs as well as gutters?',
+        'a' => 'Yes. Gutter and roof cleaning covers gutters and downspouts, solar panel cleaning with soft brushes and purified water, and roof debris removal. Clean panels let more sunlight reach the cells, so the system produces more.',
     ],
     [
         'q' => 'Which languages does your team speak?',
@@ -46,9 +46,11 @@ $schemaMarkup = generateFAQSchema($faqs);
 
 // Icon + tint mapping for the three service groups (adjacent tints/icons differ)
 $svcMeta = [
-    'cleaning-services' => ['icon' => 'house',     'tint' => 1, 'cover' => 1, 'bullets' => ['Deep, recurring & one-time cleans', 'Move-in & move-out turnovers', 'Carpets, windows & blinds']],
-    'seasonal-services' => ['icon' => 'snowflake', 'tint' => 2, 'cover' => 2, 'bullets' => ['Office & commercial cleaning', 'Christmas light install & takedown', 'Scheduled around your calendar']],
-    'gutter-cleaning'   => ['icon' => 'droplets',  'tint' => 3, 'cover' => 3, 'bullets' => ['Full debris & blockage clearing', 'Done before the rainy season', 'Protects roof, fascia & foundation']],
+    'window-cleaning'      => ['icon' => 'sun',       'tint' => 1, 'cover' => 1, 'bullets' => ['Windows inside & out', 'Blind & screen cleaning', 'Screen & blind repairs']],
+    'house-cleaning'       => ['icon' => 'home',      'tint' => 2, 'cover' => 2, 'bullets' => ['Deep cleans', 'Move-in / move-out & post-construction', 'Recurring maintenance cleaning']],
+    'gutter-roof-cleaning' => ['icon' => 'droplets',  'tint' => 3, 'cover' => 3, 'bullets' => ['Gutters & downspouts cleared', 'Solar panels cleaned for full output', 'Roof debris removed']],
+    'pressure-washing'     => ['icon' => 'waves',     'tint' => 1, 'cover' => 1, 'bullets' => ['House & roof soft washing', 'Driveways, patios & porches', 'Decks & fences']],
+    'seasonal-services'    => ['icon' => 'snowflake', 'tint' => 2, 'cover' => 2, 'bullets' => ['Christmas light installation', 'January takedown included', 'Clips, not staples']],
 ];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -71,7 +73,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 .svc-cover--3 { background: linear-gradient(140deg, var(--color-accent), var(--color-accent-dark)); }
 .svc-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .3rem; }
 
-/* Signature "since 1991" story band — the one section that does not repeat */
+/* Signature story band — the one section that does not repeat */
 .story-band { overflow: clip; }
 .story-band .pull-quote { color: #fff; margin: .4rem 0 1rem; }
 .story-band .pull-quote::before { color: var(--color-accent-bright); }
@@ -105,21 +107,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container">
     <div class="hero-grid hero-grid--form">
       <div class="hero-text">
-        <span class="eyebrow">Sacramento, CA · Family-owned since 1991</span>
-        <h1 class="hero-title">Family-run house cleaning in Sacramento</h1>
+        <span class="eyebrow">Sacramento, CA · Family-owned since 1998</span>
+        <h1 class="hero-title">Family-owned cleaning services in Sacramento and surrounding areas</h1>
         <p class="hero-answer">
-          Express Pro Cleaning Services has cleaned Sacramento homes and offices since 1991 — deep cleans, move-outs, recurring visits, carpets, windows and gutter cleaning from a family team fluent in English, Ukrainian and Russian. We handle residential and commercial properties with flexible scheduling and free, no-obligation quotes.
+          Express Pro Cleaning Services, home of the original Express Mini Blind &amp; Window Cleaning, has served Sacramento homes and businesses since 1989 — window, blind and screen cleaning, house cleaning, gutter and roof cleaning, pressure washing and Christmas lights from a family team fluent in English, Ukrainian and Russian. Flexible scheduling and free, no-obligation quotes.
         </p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
-          <a class="link-call" href="tel:<?php echo $phoneRaw; ?>">
-            <?php echo icon('phone', 18); ?>
-            <span>or call <?php echo formatPhone($phone); ?></span>
-          </a>
+          <?php echo phoneCallText(18, 'link-call'); ?>
         </div>
         <ul class="hero-chips">
-          <li><?php echo icon('users', 16); ?> Family owned since 1991</li>
-          <li><?php echo icon('calendar-check', 16); ?> 35+ years in Sacramento</li>
+          <li><?php echo icon('users', 16); ?> Family-owned since 1998</li>
+          <li><?php echo icon('calendar-check', 16); ?> Serving Sacramento since 1989</li>
           <li><?php echo icon('globe', 16); ?> English · Українська · Русский</li>
         </ul>
       </div>
@@ -164,20 +163,20 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 <!-- ============================ TICKER ============================ -->
 <div class="ticker-strip" aria-hidden="true">
   <div class="ticker-track">
-    <span><?php echo icon('calendar-check', 18); ?> Serving Sacramento since 1991</span>
+    <span><?php echo icon('calendar-check', 18); ?> Serving Sacramento since 1989</span>
     <span><?php echo icon('users', 18); ?> Family owned &amp; operated</span>
-    <span><?php echo icon('home', 18); ?> Homes &amp; offices</span>
-    <span><?php echo icon('star', 18); ?> Deep &amp; move-out cleans</span>
-    <span><?php echo icon('waves', 18); ?> Carpets · Windows · Blinds</span>
+    <span><?php echo icon('home', 18); ?> Homes &amp; businesses</span>
+    <span><?php echo icon('waves', 18); ?> Pressure &amp; soft washing</span>
+    <span><?php echo icon('sun', 18); ?> Windows · Blinds · Screens</span>
     <span><?php echo icon('globe', 18); ?> English · Ukrainian · Russian</span>
     <span><?php echo icon('check-circle', 18); ?> Free estimates</span>
     <span><?php echo icon('map-pin', 18); ?> Greater Sacramento area</span>
     <!-- duplicate set for seamless loop -->
-    <span><?php echo icon('calendar-check', 18); ?> Serving Sacramento since 1991</span>
+    <span><?php echo icon('calendar-check', 18); ?> Serving Sacramento since 1989</span>
     <span><?php echo icon('users', 18); ?> Family owned &amp; operated</span>
-    <span><?php echo icon('home', 18); ?> Homes &amp; offices</span>
-    <span><?php echo icon('star', 18); ?> Deep &amp; move-out cleans</span>
-    <span><?php echo icon('waves', 18); ?> Carpets · Windows · Blinds</span>
+    <span><?php echo icon('home', 18); ?> Homes &amp; businesses</span>
+    <span><?php echo icon('waves', 18); ?> Pressure &amp; soft washing</span>
+    <span><?php echo icon('sun', 18); ?> Windows · Blinds · Screens</span>
     <span><?php echo icon('globe', 18); ?> English · Ukrainian · Russian</span>
     <span><?php echo icon('check-circle', 18); ?> Free estimates</span>
     <span><?php echo icon('map-pin', 18); ?> Greater Sacramento area</span>
@@ -190,7 +189,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container">
     <div class="stats-row">
       <div class="stat-item">
-        <span class="stat-number">Est. <span>1991</span></span>
+        <span class="stat-number">Est. <span><?php echo $yearEstablished; ?></span></span>
         <span class="stat-label">Serving Sacramento since</span>
       </div>
       <div class="stat-item">
@@ -216,12 +215,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">What We Do</span>
       <h2>Which cleaning services can you book in <span class="text-accent">Sacramento</span>?</h2>
       <p class="hero-answer">
-        Express Pro Cleaning Services handles the full range of home and business cleaning across Sacramento: regular house cleaning, deep cleans, move-in and move-out turnovers, recurring maintenance, offices, plus carpets, windows, blinds, pressure washing, gutters and seasonal Christmas lights.
+        Five services for Sacramento homes and businesses: window, blind and screen cleaning with repairs; house cleaning (deep, move-in/move-out, post-construction, recurring); gutter and roof cleaning including solar panels; pressure and soft washing for house, roof, driveway, patio, porches, decks and fences; and Christmas light installation and takedown.
       </p>
-      <span class="section-subtitle">One local family, twelve ways to get it clean</span>
+      <span class="section-subtitle">One local family, five ways to get it clean</span>
     </div>
 
-    <div class="services-grid">
+    <div class="services-grid" data-p1-dynamic>
       <?php foreach ($services as $card):
         $meta = $svcMeta[$card['slug']]; ?>
       <article class="service-card-with-image card-tint-<?php echo $meta['tint']; ?> reveal-up reveal-delay-<?php echo $meta['tint']; ?>">
@@ -237,7 +236,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
             <li><?php echo e($bullet); ?></li>
             <?php endforeach; ?>
           </ul>
-          <a href="/<?php echo e($card['slug']); ?>/" class="service-card__cta">Learn more</a>
+          <a href="/services/<?php echo e($card['slug']); ?>/" class="service-card__cta">Learn more</a>
         </div>
       </article>
       <?php endforeach; ?>
@@ -252,19 +251,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container grid-asymmetric">
     <div class="reveal-left">
       <span class="eyebrow">Our Story</span>
-      <blockquote class="pull-quote">Same family, same standards, same city — since 1991.</blockquote>
+      <blockquote class="pull-quote">Same family, same standards, same city — since 1998.</blockquote>
       <p class="story-lead">
-        Express Pro Cleaning Services began in 1991 as Express Mini Blind &amp; Window Cleaning and has grown into a full-service cleaning company for Sacramento homes and offices. Three decades later it is still owner-run, still local, and still built on knowing the neighborhoods it serves.
+        Express Pro Cleaning Services, home of the original Express Mini Blind &amp; Window Cleaning, has proudly served homes and businesses throughout Sacramento and the surrounding areas since 1989. What began as a specialty blind and window cleaning business has grown to offer a wide range of residential and commercial cleaning services. As a family-owned business since 1998, we continue to provide the dependable, personalized service our customers have trusted for years.
       </p>
     </div>
     <ul class="timeline reveal-right">
       <li>
-        <b>1991</b>
+        <b>1989</b>
         <p>Founded in Sacramento as Express Mini Blind &amp; Window Cleaning, specializing in blinds and glass.</p>
       </li>
       <li>
-        <b>Growth</b>
-        <p>Added house cleaning, deep cleans, carpets, move-outs and commercial work as customers asked for more.</p>
+        <b>1998</b>
+        <p>Taken over by a family member — and family-owned ever since. House cleaning, gutters, exterior washing and holiday lights followed as customers asked for more.</p>
       </li>
       <li>
         <b>Today</b>
@@ -281,10 +280,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">The Express Pro Way</span>
       <h2>A Sacramento cleaning company that treats your place like its own</h2>
       <p>
-        Express Pro Cleaning Services is a family-owned business based in Sacramento, California, serving homes and businesses across the region since 1991. We show up when we say we will, keep the same routine every visit, and clean the details most crews skip.
+        Express Pro Cleaning Services is a family-owned business based in Sacramento, California, serving homes and businesses across the region since 1989. We show up when we say we will, keep the same routine every visit, and clean the details most crews skip.
       </p>
       <p>
-        Whether it is a one-time deep clean, a move-out that has to pass a walkthrough, weekly upkeep or an office after hours, you deal with the same people who have built this business by word of mouth in the Sacramento area for over thirty years.
+        Whether it is a one-time deep clean, a move-out that has to pass a walkthrough, a set of blinds that need washing or a roofline of Christmas lights, you deal with the same family that has built this business by word of mouth in the Sacramento area.
       </p>
       <ol class="process-steps">
         <li>
@@ -308,16 +307,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 
     <div class="about-right reveal-right">
       <div class="about-panel">
-        <span class="about-panel__eyebrow">Since 1991</span>
+        <span class="about-panel__eyebrow">Family-owned since 1998</span>
         <p class="about-panel__quote">Local, family-run, and easy to talk to in the language you prefer.</p>
         <ul class="about-panel__list">
           <li><?php echo icon('users', 20); ?><span>Owner-operated family team — no rotating strangers</span></li>
           <li><?php echo icon('globe', 20); ?><span>We work in English, Ukrainian and Russian</span></li>
-          <li><?php echo icon('home', 20); ?><span>Homes, apartments and offices across Sacramento</span></li>
+          <li><?php echo icon('home', 20); ?><span>Homes and businesses across Sacramento and surrounding areas</span></li>
         </ul>
       </div>
       <div class="about-stat-card">
-        <span class="stat-number"><span>35</span>+</span>
+        <span class="stat-number"><span><?php echo $yearsInBusiness; ?></span>+</span>
         <span class="stat-label">Years serving Sacramento</span>
       </div>
     </div>
@@ -333,7 +332,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Good to Know</span>
       <h2>Questions Sacramento customers ask <span class="text-accent">before booking</span></h2>
-      <p class="prose">Straight answers on where we work, what we clean and how pricing works. Still have a question? Call <?php echo formatPhone($phone); ?>.</p>
+      <p class="prose">Straight answers on where we work, what we clean and how pricing works. Still have a question? Call or text <?php echo formatPhone($phone); ?>.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $i => $faq): ?>
@@ -414,7 +413,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <ol class="next-steps">
         <li><strong>We call you back.</strong> A member of the family, not a call center.</li>
         <li><strong>Quick walkthrough &amp; flat quote.</strong> We size up the job and give you a clear price.</li>
-        <li><strong>We schedule around you.</strong> Evenings and weekends available for offices.</li>
+        <li><strong>We schedule around you.</strong> Evenings and weekends available for businesses, so we work around your hours rather than through them.</li>
       </ol>
 
       <div class="nap">

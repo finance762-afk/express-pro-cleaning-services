@@ -63,6 +63,9 @@ DirectoryIndex index.php index.html
     RewriteEngine On
 
     # Dynamic sitemap — /sitemap.xml is served by sitemap.php
+    # 2026-10-21 service restructure (client's five categories)
+    RewriteRule ^services/cleaning-services/?$ /services/house-cleaning/ [R=301,L]
+    RewriteRule ^services/gutter-cleaning/?$ /services/gutter-roof-cleaning/ [R=301,L]
     RewriteRule ^sitemap\.xml$ /sitemap.php [L]
 
     RewriteCond %{REQUEST_URI} !^/assets/

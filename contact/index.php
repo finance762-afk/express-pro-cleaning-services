@@ -319,7 +319,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
             </div>
           </div>
           <p style="margin-top: 1rem; color: var(--color-muted); font-size: 0.9rem;">
-            Flexible scheduling available. We can work evenings and weekends for offices and commercial spaces.
+            Flexible scheduling available. We can work evenings and weekends for businesses and commercial properties.
           </p>
         </div>
 

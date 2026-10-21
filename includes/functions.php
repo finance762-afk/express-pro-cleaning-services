@@ -165,3 +165,16 @@ function icon($name, $size = 24) {
 function e($text) {
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
 }
+
+
+/**
+ * Phone shown as "[icon] (916) 983-9274 or TEXT (916) 983-9274" — client request 2026-10-20:
+ * everywhere the number appears, show the phone icon, the number, then "or TEXT" + number (sms: link).
+ */
+function phoneCallText($iconSize = 18, $class = '') {
+    global $phone, $phoneRaw;
+    $n = formatPhone($phone);
+    return '<span class="phone-call-text ' . e($class) . '">' . icon('phone', $iconSize)
+         . ' <a href="tel:' . e($phoneRaw) . '">' . e($n) . '</a>'
+         . ' <span class="phone-or">or TEXT</span> <a href="sms:' . e($phoneRaw) . '">' . e($n) . '</a></span>';
+}

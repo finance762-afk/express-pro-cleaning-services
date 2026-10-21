@@ -4,263 +4,79 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 /* ---------------------------------------------------------------------------
- * PAGE SETUP — Cleaning Services
+ * PAGE SETUP — House Cleaning Services (deep, move-in/out, post-construction, recurring)
  * ------------------------------------------------------------------------- */
 $pageType        = 'service';
-$serviceSlug     = 'cleaning-services';
+$serviceSlug     = 'house-cleaning';
 $currentPage     = 'services';
-$canonicalUrl    = $siteUrl . '/services/cleaning-services/';
+$canonicalUrl    = $siteUrl . '/services/house-cleaning/';
 $pageTitle       = 'House Cleaning Services Sacramento, CA | ' . $siteName;
-$metaDescription = 'Deep cleans, move-outs, recurring cleaning, carpets, windows and more for Sacramento homes. Family-owned since 1991. Call ' . formatPhone($phone) . ' for a free estimate.';
+$metaDescription = 'Deep cleaning, move-in/move-out cleaning, post-construction cleanup and recurring maintenance cleaning for Sacramento homes. Family-owned since 1998. Call or text ' . formatPhone($phone) . '.';
 $pageDescription = $metaDescription;
 
-// Services covered on this page
 $pageServices = [
-    'House Cleaning',
     'Deep Cleaning',
     'Move-In / Move-Out Cleaning',
-    'Recurring House Cleaning',
     'Post-Construction Cleaning',
-    'Carpet Cleaning',
-    'Window Cleaning',
-    'Blind Cleaning',
-    'Pressure Washing',
+    'Recurring Maintenance Cleaning',
 ];
 
-// FAQ content (drives visible FAQ AND FAQPage schema)
 $faqs = [
     [
-        'q' => 'How much does deep cleaning cost in Sacramento?',
-        'a' => 'Deep cleaning costs in Sacramento typically range from $200 to $600 depending on home size, condition and what you need cleaned. Express Pro Cleaning Services gives you a clear flat quote after a quick phone walkthrough of your space.',
+        'q' => 'What is the difference between a deep clean and a recurring maintenance clean?',
+        'a' => 'A deep clean strips built-up grime: baseboards, grout, cabinet fronts, inside the oven and fridge, window tracks, light fixtures. A recurring maintenance clean keeps a home at that level on a weekly, every-other-week or monthly schedule. Most Sacramento homes start with a deep clean, then move to maintenance.',
     ],
     [
         'q' => 'What is included in a move-out cleaning?',
-        'a' => 'Our move-out cleaning covers every surface in the empty home: inside cabinets and drawers, inside appliances, baseboards, light fixtures, windows, floors and bathrooms scrubbed from grout to ceiling. The goal is a space that passes the landlord or buyer walkthrough.',
+        'a' => 'Every surface of the empty home: inside cabinets and drawers, inside appliances, baseboards, light fixtures, interior windows, floors, and bathrooms scrubbed from grout to ceiling. The goal is a space that passes the landlord or buyer walkthrough.',
     ],
     [
-        'q' => 'How long does a deep clean take?',
-        'a' => 'A deep clean for a typical Sacramento home takes 4 to 8 hours depending on square footage and how much built-up grime the team finds. We give you a time estimate when we quote the job so you know what to expect.',
+        'q' => 'Do you do post-construction cleaning after a remodel?',
+        'a' => 'Yes. Post-construction cleaning removes drywall and sawdust from every surface, vents and window tracks, wipes down cabinets and fixtures, cleans the glass and finishes the floors so the space is ready to move back into. Tell us when the contractor finishes and we schedule right behind them.',
     ],
     [
         'q' => 'Do you bring your own cleaning supplies and equipment?',
-        'a' => 'Yes. Express Pro Cleaning Services brings all cleaning supplies, tools and equipment needed for the job. If you prefer we use a specific product you supply, just let us know when booking.',
+        'a' => 'Yes. Express Pro Cleaning Services brings all supplies, tools and equipment. If you prefer a specific product, leave it out and tell us when booking.',
     ],
     [
-        'q' => 'Can I set up weekly or bi-weekly recurring house cleaning?',
-        'a' => 'Yes. We build recurring house cleaning plans on a weekly, every-other-week or monthly schedule across Sacramento. Recurring clients get the same team and the same routine each visit so your home stays consistently clean without you managing it.',
-    ],
-    [
-        'q' => 'Do you clean carpets and windows?',
-        'a' => 'Yes. Express Pro Cleaning Services offers professional carpet cleaning (steam or dry extraction) and window cleaning (inside and out) as standalone services or as add-ons to a house cleaning. We started as a blind and window cleaning company in 1991, so glass is still a specialty.',
+        'q' => 'Will the same people clean my home each visit?',
+        'a' => 'Yes. Recurring clients get the same family team and the same checklist each visit, so the routine stays consistent and you see familiar faces.',
     ],
     [
         'q' => 'What areas around Sacramento do you serve?',
-        'a' => 'We serve Sacramento and surrounding communities within roughly 80 miles: North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. Call (916) 983-9274 to confirm we cover your area.',
+        'a' => 'Sacramento and surrounding communities within about 30 miles: North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville and Folsom. Call or text (916) 983-9274 to confirm your address.',
     ],
 ];
 
-// @graph schema: Service + FAQPage + BreadcrumbList
 $schemaMarkup = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        // Service schema
         [
             '@type' => 'Service',
-            '@id' => $siteUrl . '/services/cleaning-services/#service',
-            'name' => 'Residential Cleaning Services',
-            'description' => 'House cleaning, deep cleans, move-in/move-out, recurring maintenance, carpet cleaning, window cleaning and more for Sacramento homes.',
+            '@id' => $canonicalUrl . '#service',
+            'name' => 'House Cleaning Services',
+            'description' => 'Deep cleaning, move-in/move-out cleaning, post-construction cleaning and recurring maintenance cleaning for Sacramento homes.',
             'provider' => ['@id' => $siteUrl . '/#organization'],
-            'areaServed' => [
-                '@type' => 'City',
-                'name' => $address['city'],
-                'containedInPlace' => [
-                    '@type' => 'State',
-                    'name' => $address['state']
-                ]
-            ],
+            'areaServed' => ['@type' => 'City', 'name' => $address['city'], 'containedInPlace' => ['@type' => 'State', 'name' => $address['state']]],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
-                'name' => 'Cleaning Services',
-                'itemListElement' => array_map(function($svc) {
-                    return [
-                        '@type' => 'Offer',
-                        'itemOffered' => [
-                            '@type' => 'Service',
-                            'name' => $svc
-                        ]
-                    ];
-                }, $pageServices)
-            ]
+                'name' => 'House Cleaning Services',
+                'itemListElement' => array_map(fn($svc) => ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $svc]], $pageServices),
+            ],
         ],
-        // FAQPage schema
         generateFAQSchema($faqs),
-        // BreadcrumbList schema
         generateBreadcrumbSchema([
             ['name' => 'Home', 'url' => $siteUrl . '/'],
-            ['name' => 'Cleaning Services', 'url' => $canonicalUrl]
-        ])
-    ]
+            ['name' => 'Services', 'url' => $siteUrl . '/services/'],
+            ['name' => 'House Cleaning Services', 'url' => $canonicalUrl],
+        ]),
+    ],
 ];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 ?>
 
-<style>
-/* ============================================================================
-   Cleaning Services page — composition
-   ============================================================================ */
 
-/* Problem/pain section with bento card grid */
-.problem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-md);
-  margin-top: var(--space-lg);
-}
-.problem-card {
-  position: relative;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
-  transition: var(--transition);
-}
-.problem-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
-.problem-card__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
-  color: white;
-  margin-bottom: var(--space-sm);
-}
-.problem-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: var(--space-xs);
-  color: var(--color-ink);
-}
-.problem-card p {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  line-height: 1.5;
-}
-
-/* Service breakdown with checklist */
-.service-breakdown {
-  display: grid;
-  gap: var(--space-xl);
-}
-.service-category {
-  border-left: 3px solid var(--color-accent);
-  padding-left: var(--space-md);
-}
-.service-category h3 {
-  font-size: 1.35rem;
-  margin-bottom: var(--space-sm);
-  color: var(--color-ink);
-}
-.service-category ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: var(--space-xs);
-}
-.service-category li {
-  display: flex;
-  gap: var(--space-sm);
-  align-items: flex-start;
-  font-size: 0.95rem;
-  color: var(--color-muted);
-}
-.service-category li svg {
-  flex: 0 0 auto;
-  color: var(--color-accent);
-  margin-top: 2px;
-}
-
-/* Process timeline */
-.process-timeline {
-  position: relative;
-  padding-left: var(--space-xl);
-  border-left: 2px solid var(--color-border);
-}
-.process-step {
-  position: relative;
-  margin-bottom: var(--space-xl);
-}
-.process-step::before {
-  content: attr(data-step);
-  position: absolute;
-  left: calc(-1 * var(--space-xl) - 18px);
-  top: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  color: white;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-family: var(--font-accent);
-  font-size: 0.95rem;
-}
-.process-step h3 {
-  font-size: 1.25rem;
-  margin-bottom: var(--space-xs);
-  color: var(--color-ink);
-}
-.process-step p {
-  color: var(--color-muted);
-  line-height: 1.6;
-}
-
-/* Why choose cards */
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
-  margin-top: var(--space-lg);
-}
-.why-card {
-  background: var(--color-surface);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
-  border-left: 4px solid var(--color-accent);
-}
-.why-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: var(--space-sm);
-  color: var(--color-ink);
-}
-.why-card p {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-  .problem-grid,
-  .why-grid {
-    grid-template-columns: 1fr;
-  }
-  .process-timeline {
-    padding-left: var(--space-lg);
-  }
-  .process-step::before {
-    left: calc(-1 * var(--space-lg) - 14px);
-    width: 28px;
-    height: 28px;
-    font-size: 0.85rem;
-  }
-}
-</style>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
@@ -272,25 +88,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <span class="eyebrow">Sacramento, CA</span>
         <h1 class="hero-title">House cleaning services in Sacramento</h1>
         <p class="hero-answer">
-          Express Pro Cleaning Services handles deep cleans, move-outs, recurring visits, post-construction, carpet and window cleaning across Sacramento — from a family team that has cleaned local homes since 1991.
+          Express Pro Cleaning Services handles deep cleans, move-in and move-out turnovers, post-construction cleanup and recurring maintenance cleaning across Sacramento — from a family team that has cleaned local homes since the 1990s and has been family-owned since 1998.
         </p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
-          <a class="link-call" href="tel:<?php echo $phoneRaw; ?>">
-            <?php echo icon('phone', 18); ?>
-            <span>or call <?php echo formatPhone($phone); ?></span>
-          </a>
+          <?php echo phoneCallText(18, 'link-call'); ?>
         </div>
         <ul class="hero-chips">
-          <li><?php echo icon('calendar-check', 16); ?> Since 1991</li>
-          <li><?php echo icon('users', 16); ?> Family owned</li>
+          <li><?php echo icon('users', 16); ?> Family-owned since <?php echo $familyOwnedSince; ?></li>
+          <li><?php echo icon('leaf', 16); ?> All supplies included</li>
           <li><?php echo icon('check-circle', 16); ?> Free estimates</li>
         </ul>
       </div>
 
       <aside class="hero-form-card" id="estimate-form">
         <h2>Get a free estimate</h2>
-        <p class="hero-form-tagline">No obligation. Same-day reply.</p>
+        <p class="hero-form-tagline">No obligation. We reply the same business day.</p>
         <form action="<?php echo e($formAction); ?>" method="POST" class="hero-form">
           <input type="hidden" name="_next" value="<?php echo e($siteUrl); ?>/thank-you">
           <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -367,13 +180,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Services Covered</span>
       <h2>What cleaning services can you book with <span class="text-accent">Express Pro</span>?</h2>
       <p class="answer-block">
-        Express Pro Cleaning Services handles the full range of residential cleaning in Sacramento: one-time deep cleans, move-in and move-out turnovers, recurring house cleaning, post-construction dust cleanup, carpet steam cleaning, window cleaning (inside and out), blind cleaning and pressure washing for driveways and siding.
+        Four services: one-time deep cleans, move-in and move-out turnovers, post-construction dust cleanup after a remodel, and recurring maintenance cleaning on a weekly, every-other-week or monthly schedule. Windows, blinds, gutters and exterior washing have their own pages.
       </p>
     </div>
 
-    <div class="service-breakdown reveal-up">
+    <div class="service-breakdown reveal-up" data-p1-dynamic>
       <div class="service-category">
-        <h3>House Cleaning & Deep Cleaning</h3>
+        <h3>Deep Cleaning</h3>
         <ul>
           <li><?php echo icon('check', 18); ?><span>Kitchen: appliances, counters, sinks, backsplash, cabinet fronts</span></li>
           <li><?php echo icon('check', 18); ?><span>Bathrooms: toilets, showers, tubs, tile, grout, mirrors, fixtures</span></li>
@@ -395,13 +208,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       </div>
 
       <div class="service-category">
-        <h3>Specialty Cleaning</h3>
+        <h3>Post-Construction &amp; Recurring Maintenance</h3>
         <ul>
-          <li><?php echo icon('check', 18); ?><span>Carpet cleaning: steam or dry extraction for traffic lanes and stains</span></li>
-          <li><?php echo icon('check', 18); ?><span>Window cleaning: interior and exterior panes, screens, frames</span></li>
-          <li><?php echo icon('check', 18); ?><span>Blind cleaning: each slat wiped or ultrasonically cleaned off-site</span></li>
-          <li><?php echo icon('check', 18); ?><span>Post-construction: dust removal from every surface after remodels</span></li>
-          <li><?php echo icon('check', 18); ?><span>Pressure washing: driveways, walkways, siding, decks</span></li>
+          <li><?php echo icon('check', 18); ?><span>Post-construction: drywall and sawdust removed from every surface, vent and track</span></li>
+          <li><?php echo icon('check', 18); ?><span>Cabinets, fixtures and glass wiped down; floors finished for move-in</span></li>
+          <li><?php echo icon('check', 18); ?><span>Recurring maintenance: weekly, every-other-week or monthly standing slot</span></li>
+          <li><?php echo icon('check', 18); ?><span>Same team, same checklist each visit — note problem areas once</span></li>
+          <li><?php echo icon('check', 18); ?><span>Floors vacuumed and mopped on every visit</span></li>
         </ul>
       </div>
     </div>
@@ -422,7 +235,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="process-timeline reveal-up">
       <div class="process-step" data-step="1">
         <h3>Contact us with the details</h3>
-        <p>Call <?php echo formatPhone($phone); ?> or send the estimate form. Tell us what you need cleaned — one-time deep clean, recurring service, move-out, carpet or window work. We ask a few questions about square footage, current condition and any problem areas.</p>
+        <p>Call or text <?php echo formatPhone($phone); ?>, or send the estimate form. Tell us what you need — deep clean, move-out, post-construction or recurring service. We ask about square footage, current condition and problem areas.</p>
       </div>
 
       <div class="process-step" data-step="2">
@@ -456,7 +269,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Why Express Pro</span>
       <h2>What makes Express Pro different from other <span class="text-accent">Sacramento cleaning companies</span>?</h2>
       <p class="answer-block">
-        Express Pro Cleaning Services is family-owned and hands-on — no franchise system, no rotating crews. We have cleaned Sacramento homes since 1991, we bring our own supplies, we speak English, Ukrainian and Russian, and we make it right if something is not perfect before we leave the job.
+        Express Pro Cleaning Services is family-owned and hands-on — no franchise system, no rotating crews. The company has served Sacramento since 1989 and has been in the same family's hands since 1998. We bring our own supplies, we speak English, Ukrainian and Russian, and we make it right before we leave the job.
       </p>
     </div>
 
@@ -467,8 +280,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       </div>
 
       <div class="why-card reveal-up reveal-delay-2">
-        <h3>35 years serving Sacramento</h3>
-        <p>We started in 1991 as Express Mini Blind & Window Cleaning and grew into a full-service residential cleaning company. Three decades in the same city means we know the neighborhoods, the housing stock and what Sacramento families need.</p>
+        <h3>Family-owned since 1998</h3>
+        <p>Express Pro started in 1989 as Express Mini Blind &amp; Window Cleaning and has been run by the same family since 1998. Decades in one city means we know the neighborhoods, the housing stock and what Sacramento families need.</p>
       </div>
 
       <div class="why-card reveal-up reveal-delay-3">
@@ -490,9 +303,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Good to Know</span>
       <h2>Questions Sacramento homeowners ask before booking <span class="text-accent">house cleaning</span></h2>
-      <p class="prose">Clear answers on pricing, what is covered, timing and scheduling. Still have a question? Call <?php echo formatPhone($phone); ?>.</p>
+      <p class="prose">Clear answers on what is covered, timing and scheduling. Still have a question? Call or text <?php echo formatPhone($phone); ?>. Many deep cleans pair with <a href="/services/window-cleaning/">window and blind cleaning</a> on the same visit.</p>
     </div>
-    <div class="faq-grid">
+    <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $i => $faq): ?>
       <details class="faq"<?php echo $i < 2 ? ' open' : ''; ?>>
         <summary><?php echo e($faq['q']); ?></summary>
@@ -509,13 +322,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container cta-final">
     <div class="cta-content reveal-up">
       <h2>Get a free house cleaning estimate for your Sacramento home</h2>
-      <p>Call <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear flat quote. No obligation, no pressure.</p>
+      <p>Call or text <?php echo formatPhone($phone); ?> or send the form and Express Pro Cleaning Services will reply with a clear flat quote. No obligation, no pressure.</p>
       <div class="cta-actions">
         <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Get my free estimate</button>
-        <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg">
-          <?php echo icon('phone', 20); ?>
-          <span>Call now</span>
-        </a>
+        <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg"><?php echo icon('phone', 20); ?><span>Call now</span></a>
+        <a href="sms:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-lg"><?php echo icon('message-square', 20); ?><span>or TEXT us</span></a>
       </div>
     </div>
   </div>

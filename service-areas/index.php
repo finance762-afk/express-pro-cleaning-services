@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 // Page setup
 $pageTitle = 'Service Areas — Professional Cleaning in Sacramento & Surrounding Communities | ' . $siteName;
-$metaDescription = 'Express Pro Cleaning Services serves Sacramento, North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville, and Folsom. Family-owned cleaning company since 1991. Call ' . $phone . ' for a free estimate.';
+$metaDescription = 'Express Pro Cleaning Services serves Sacramento, North Highlands, Rio Linda, Citrus Heights, Carmichael, Elk Grove, Roseville, and Folsom. Family-owned cleaning company since 1998. Call ' . $phone . ' for a free estimate.';
 $pageDescription = $metaDescription;
 $canonicalUrl = $siteUrl . '/service-areas/';
 $pageType = 'other';
@@ -249,7 +249,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <h1>Professional Cleaning Services in Sacramento & Surrounding Communities</h1>
     <p class="hero-answer">
       Express Pro Cleaning Services proudly serves Sacramento and the greater metropolitan area,
-      bringing 35 years of professional cleaning experience to homes and businesses across eight
+      bringing decades of professional cleaning experience to homes and businesses across eight
       communities. Family-owned and locally operated, we understand the unique needs of each
       neighborhood we serve.
     </p>
@@ -266,7 +266,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       Sacramento
     </h3>
     <p>
-      As our home base since 1991, Sacramento is where Express Pro Cleaning Services was founded
+      As our home base since 1989, Sacramento is where Express Pro Cleaning Services was founded
       and where we maintain our strongest presence. We serve all neighborhoods throughout the city,
       from Midtown to East Sacramento, Land Park to Natomas.
     </p>
@@ -292,8 +292,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     </p>
     <div class="local-details">
       <strong>Local expertise includes:</strong> Ranch-style homes built in the 1960s–1980s throughout
-      neighborhoods like Foothill Farms and Arden-Arcade areas, commercial cleaning for strip malls
-      and offices along Watt Avenue and Madison Avenue corridors. The area's mature tree canopy means
+      neighborhoods like Foothill Farms and Arden-Arcade areas, exterior washing and window cleaning for strip malls
+      and small businesses along Watt Avenue and Madison Avenue corridors. The area's mature tree canopy means
       we regularly handle window and gutter cleaning to manage oak and sycamore debris.
     </div>
   </article>
@@ -330,10 +330,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     </p>
     <div class="local-details">
       <strong>Local expertise includes:</strong> Tract homes in established neighborhoods like
-      Woodside, Mariposa Gardens, and Rusch Park areas, commercial offices and retail spaces in the
+      Woodside, Mariposa Gardens, and Rusch Park areas, storefront window cleaning and pressure washing in the
       Sunrise Mall district and along Greenback Lane, move-in/move-out cleaning for the area's active
-      real estate market. Citrus Heights' 1970s–1990s housing stock often requires carpet deep cleaning
-      and blind restoration services.
+      real estate market. Citrus Heights' 1970s–1990s housing stock often needs deep cleaning,
+      blind cleaning and screen repairs.
     </div>
   </article>
 
@@ -389,7 +389,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       communities.
     </p>
     <div class="local-details">
-      <strong>Local expertise includes:</strong> Office cleaning for businesses in the Galleria area
+      <strong>Local expertise includes:</strong> Window cleaning and exterior washing for businesses in the Galleria area
       and Highway 65 commercial corridor, luxury homes in Woodcreek, West Park, and Fiddyment Ranch
       requiring premium deep cleaning services, post-construction cleaning for Roseville's continuous
       new development. The area's granite countertops and tile work common in newer homes require our

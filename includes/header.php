@@ -23,7 +23,7 @@
             <ul class="dropdown" role="menu" style="display:none">
               <?php foreach ($services as $navSvc): ?>
               <li role="menuitem">
-                <a href="/<?php echo getServiceSlug($navSvc['slug']); ?>/">
+                <a href="/services/<?php echo e($navSvc['slug']); ?>/">
                   <?php echo e($navSvc['name']); ?>
                 </a>
               </li>
@@ -41,6 +41,7 @@
             <?php echo icon('phone', 18); ?>
             <span><?php echo formatPhone($phone); ?></span>
           </a>
+          <a href="sms:<?php echo $phoneRaw; ?>" class="btn-text">or TEXT <?php echo formatPhone($phone); ?></a>
           <a href="#estimate" class="btn btn-primary" data-open-estimate>
             Free Estimate
           </a>
@@ -64,7 +65,7 @@
 
         <?php foreach ($services as $navSvc): ?>
         <li>
-          <a href="/<?php echo getServiceSlug($navSvc['slug']); ?>/" <?php if (isActivePage($navSvc['slug'])) echo 'aria-current="page"'; ?>>
+          <a href="/services/<?php echo e($navSvc['slug']); ?>/" <?php if (isActivePage($navSvc['slug'])) echo 'aria-current="page"'; ?>>
             <?php echo e($navSvc['name']); ?>
           </a>
         </li>
@@ -77,7 +78,11 @@
       <div class="mobile-menu-cta">
         <a href="tel:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-block">
           <?php echo icon('phone', 20); ?>
-          <span>Call Now</span>
+          <span>Call <?php echo formatPhone($phone); ?></span>
+        </a>
+        <a href="sms:<?php echo $phoneRaw; ?>" class="btn btn-secondary btn-block">
+          <?php echo icon('message-square', 20); ?>
+          <span>or TEXT <?php echo formatPhone($phone); ?></span>
         </a>
         <a href="#estimate" class="btn btn-primary btn-block" data-open-estimate>
           Free Estimate

@@ -9,8 +9,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $pageType        = 'other';
 $currentPage     = 'about';
 $canonicalUrl    = $siteUrl . '/about/';
-$pageTitle       = 'About Us | ' . $siteName . ' | Family-Owned Since 1991';
-$metaDescription = 'Express Pro Cleaning Services is a family-owned Sacramento cleaning business since 1991. Learn about our story, values, and commitment to quality service in English, Ukrainian and Russian.';
+$pageTitle       = 'About Us | ' . $siteName . ' | Family-Owned Since 1998';
+$metaDescription = 'Express Pro Cleaning Services, home of the original Express Mini Blind & Window Cleaning, has served Sacramento since 1989 and been family-owned since 1998. Our story, values and service in English, Ukrainian and Russian.';
 $pageDescription = $metaDescription;
 
 // Breadcrumb schema
@@ -261,9 +261,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
   <div class="container">
     <div class="hero-text">
       <span class="eyebrow">About Express Pro Cleaning Services</span>
-      <h1>A Sacramento cleaning company built on trust since 1991</h1>
+      <h1>Family-owned cleaning services in Sacramento and surrounding areas</h1>
       <p class="hero-answer">
-        Express Pro Cleaning Services is a family-owned business that has served Sacramento homes and offices for over three decades. We show up when we say we will, keep the same routine every visit, and clean the details most crews skip.
+        Express Pro Cleaning Services, home of the original Express Mini Blind &amp; Window Cleaning, has served Sacramento homes and businesses since 1989 and has been family-owned since 1998. We show up when we say we will, keep the same routine every visit, and clean the details most crews skip.
       </p>
       <div class="hero-actions">
         <button type="button" class="btn btn-primary btn-lg" data-open-estimate>Get a free estimate</button>
@@ -293,31 +293,31 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
     <div class="grid-asymmetric">
       <div class="reveal-left">
         <span class="eyebrow-label">Our Story</span>
-        <h2>From window cleaning to full-service: <span class="text-accent">35 years in Sacramento</span></h2>
+        <h2>From window cleaning to full-service: <span class="text-accent">family-owned since 1998</span></h2>
         <p>
-          Express Pro Cleaning Services began in 1991 as Express Mini Blind & Window Cleaning, a small Sacramento operation focused on blinds and glass. Owner Anna Piontkevych saw an opportunity to serve local families and businesses with reliable, hands-on work that showed up on time and cleaned the way customers actually wanted it done.
+          Express Pro Cleaning Services, home of the original Express Mini Blind &amp; Window Cleaning, has proudly served homes and businesses throughout Sacramento and the surrounding areas since 1989. The company began as a small specialty operation focused on blinds and glass. In 1998 a family member took the business over, and it has been family-owned ever since.
         </p>
         <p>
-          As customers asked for more — deep cleans, move-outs, carpets, recurring visits — the company grew service by service. Today Express Pro Cleaning Services covers the full range of home and office cleaning across the Sacramento area, still owner-run, still local, and still built on the same principle: treat every place like it belongs to the family.
+          What began as blind and window cleaning has grown to offer a wide range of residential and commercial cleaning services: house cleaning, gutter and roof cleaning, pressure and soft washing, and Christmas light installation. Still owner-run, still local, and still built on the same principle: treat every place like it belongs to the family.
         </p>
         <p>
-          Three decades later, Express Pro serves customers in English, Ukrainian and Russian, keeping the same team on recurring jobs so you see familiar faces every visit. The name changed from Express Mini Blind & Window Cleaning to Express Pro Cleaning Services, but the commitment stayed the same.
+          Today Express Pro serves customers in English, Ukrainian and Russian, keeping the same team on recurring jobs so you see familiar faces every visit. The name changed from Express Mini Blind &amp; Window Cleaning to Express Pro Cleaning Services, but the dependable, personalized service our customers have trusted for years stayed the same.
         </p>
       </div>
       <div class="reveal-right">
         <div class="about-timeline">
           <div class="timeline-item">
-            <div class="timeline-item__year">1991</div>
+            <div class="timeline-item__year">1989</div>
             <div class="timeline-item__title">Founded in Sacramento</div>
             <p class="timeline-item__desc">
-              Started as Express Mini Blind & Window Cleaning, specializing in blinds and glass for Sacramento homes.
+              Started as Express Mini Blind &amp; Window Cleaning, specializing in blinds and glass for Sacramento homes.
             </p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-item__year">Growth</div>
-            <div class="timeline-item__title">Services expanded</div>
+            <div class="timeline-item__year">1998</div>
+            <div class="timeline-item__title">Family-owned</div>
             <p class="timeline-item__desc">
-              Added house cleaning, deep cleans, carpets, move-outs and commercial work as local demand grew.
+              Taken over by a family member and family-owned ever since. House cleaning, gutters, exterior washing and holiday lights followed as local demand grew.
             </p>
           </div>
           <div class="timeline-item">
@@ -348,7 +348,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow-label">Our Values</span>
       <h2>What makes Express Pro <span class="text-accent">different</span></h2>
       <p class="prose">
-        These are the principles that guide how we work on every job, from a one-time deep clean to a recurring office contract.
+        These are the principles that guide how we work on every job, from a one-time deep clean to a recurring maintenance schedule.
       </p>
     </div>
 
@@ -389,7 +389,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         </div>
         <h3>Reliable Scheduling</h3>
         <p>
-          We show up when we say we will. Evenings and weekends available for offices so we work around your schedule, not through it.
+          We show up when we say we will. Evenings and weekends available for businesses so we work around your schedule, not through it.
         </p>
       </div>
 
@@ -409,7 +409,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         </div>
         <h3>Sacramento Rooted</h3>
         <p>
-          We have cleaned Sacramento neighborhoods for 35 years. We know the homes, the weather, the routines that work here.
+          We have cleaned Sacramento neighborhoods since 1989. We know the homes, the hard water, the dry-season dust and the routines that work here.
         </p>
       </div>
     </div>
@@ -424,13 +424,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <span class="eyebrow-label">How We Work</span>
         <h2>The Express Pro <span class="text-accent">cleaning standard</span></h2>
         <p>
-          Express Pro Cleaning Services treats every home and office the same way: as if it belongs to us. That means showing up on schedule, following the checklist every time, and checking the details before we leave.
+          Express Pro Cleaning Services treats every home and business the same way: as if it belongs to us. That means showing up on schedule, following the checklist every time, and checking the details before we leave.
         </p>
         <p>
           On recurring jobs we keep the same crew so you see familiar faces and the team knows your space and your preferences. We bring our own equipment and supplies unless you have specific product requests. For move-outs and deep cleans we work section by section, finishing each area completely before moving to the next.
         </p>
         <p>
-          If you notice something we missed, tell us — we want to hear about it. That is how we have built a word-of-mouth business across Sacramento for over three decades.
+          If you notice something we missed, tell us — we want to hear about it. That is how a word-of-mouth business stays in one family for decades.
         </p>
       </div>
       <div class="reveal-right">
@@ -457,7 +457,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
       <span class="eyebrow">Meet the owner</span>
       <h3><?php echo e($ownerName); ?></h3>
       <p>
-        Anna Piontkevych founded Express Mini Blind & Window Cleaning in 1991 and grew it into the full-service operation it is today. She still runs the business day-to-day, handles estimates personally, and keeps the same standard on every job: if it would not pass inspection in her own home, it does not pass.
+        Anna Piontkevych runs Express Pro Cleaning Services day-to-day, handles estimates personally, and keeps the same standard on every job: if it would not pass inspection in her own home, it does not pass.
       </p>
       <p>
         Anna and the Express Pro team serve Sacramento families and businesses in English, Ukrainian and Russian, making it easy for customers to communicate in the language they prefer.
@@ -471,8 +471,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <div class="credential-item">
           <?php echo icon('calendar-check', 24); ?>
           <div class="credential-item__text">
-            <strong>35+ Years in Business</strong>
-            <span>Serving Sacramento since 1991</span>
+            <strong>Serving Sacramento since 1989</strong>
+            <span>Family-owned since 1998</span>
           </div>
         </div>
         <div class="credential-item">
@@ -490,10 +490,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
           </div>
         </div>
         <div class="credential-item">
-          <?php echo icon('sparkles', 24); ?>
+          <?php echo icon('star', 24); ?>
           <div class="credential-item__text">
             <strong>Full-Service Cleaning</strong>
-            <span>Homes, offices, carpets, windows, blinds and gutters</span>
+            <span>Windows and blinds, house cleaning, gutters and roofs, pressure washing, holiday lights</span>
           </div>
         </div>
       </div>

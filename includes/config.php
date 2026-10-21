@@ -13,7 +13,7 @@
  * ------------------------------------------------------------------------- */
 $slug     = 'express-pro-cleaning-services';   // MUST equal this build's directory name
 $siteName = 'Express Pro Cleaning Services';
-$tagline  = 'Family-owned cleaning in Sacramento since 1991';  // no tagline in intake — derived from USPs
+$tagline  = 'Family-owned cleaning services in Sacramento and surrounding areas';  // client-supplied 2026-10-10
 $industry = 'janitorial';
 
 /* ---------------------------------------------------------------------------
@@ -44,12 +44,13 @@ $businessHours = 'Mon–Fri 7:00 AM–8:00 PM, Sat 7:00 AM–6:00 PM, Sun closed
 /* ---------------------------------------------------------------------------
  * COMPANY FACTS (proof strip / about / schema)
  * ------------------------------------------------------------------------- */
-$yearEstablished = 1991;
-$yearsInBusiness = 35;
+$yearEstablished  = 1989;   // founded 1989 as Express Mini Blind & Window Cleaning (client, 2026-10-10)
+$familyOwnedSince = 1998;   // taken over by a family member in 1998; family-owned ever since
+$yearsInBusiness  = 37;
 $ownerName       = 'Anna Piontkevych';
 $usps = [
-    'Family owned since 1991',
-    'Formerly Express Mini Blind & Window Cleaning',
+    'Family-owned since 1998',
+    'Home of the original Express Mini Blind & Window Cleaning',
     'Service in English, Ukrainian and Russian',
 ];
 
@@ -60,8 +61,9 @@ $primaryKeyword     = 'house cleaning Sacramento';
 $secondaryKeywords  = [
     'deep cleaning Sacramento CA',
     'move out cleaning Sacramento',
-    'office cleaning Sacramento',
     'window cleaning Sacramento',
+    'pressure washing Sacramento',
+    'gutter cleaning Sacramento CA',
 ];
 $targetRadius = 30; // miles
 
@@ -73,58 +75,86 @@ $targetRadius = 30; // miles
  * ------------------------------------------------------------------------- */
 $services = [
     [
-        'name'        => 'Cleaning Services',
-        'slug'        => 'cleaning-services',
-        'description' => 'Residential and specialty cleaning across Sacramento — house cleaning, deep cleans, move-in/move-out turnovers, recurring maintenance, plus carpet, window, blind and pressure washing.',
-        'keywords'    => ['house cleaning Sacramento', 'deep cleaning Sacramento CA', 'move out cleaning Sacramento'],
+        'name'        => 'Window Cleaning Services',
+        'slug'        => 'window-cleaning',
+        'short'       => 'Window Cleaning',
+        'description' => 'Window, blind and screen cleaning for Sacramento homes and businesses, plus screen and blind repairs — the work Express Pro has done since it opened as Express Mini Blind & Window Cleaning.',
+        'keywords'    => ['window cleaning Sacramento', 'blind cleaning Sacramento CA'],
         'services'    => [
-            'House Cleaning',
-            'Deep Cleaning',
-            'Move-In / Move-Out Cleaning',
-            'Recurring House Cleaning',
-            'Post-Construction Cleaning',
-            'Carpet Cleaning',
             'Window Cleaning',
             'Blind Cleaning',
-            'Pressure Washing',
+            'Screen Cleaning',
+            'Screen & Blind Repairs',
+        ],
+    ],
+    [
+        'name'        => 'House Cleaning Services',
+        'slug'        => 'house-cleaning',
+        'short'       => 'House Cleaning',
+        'description' => 'Deep cleans, move-in and move-out turnovers, post-construction cleanup and recurring maintenance cleaning for Sacramento homes.',
+        'keywords'    => ['house cleaning Sacramento', 'deep cleaning Sacramento CA', 'move out cleaning Sacramento'],
+        'services'    => [
+            'Deep Cleaning',
+            'Move-In / Move-Out Cleaning',
+            'Post-Construction Cleaning',
+            'Recurring Maintenance Cleaning',
+        ],
+    ],
+    [
+        'name'        => 'Gutter and Roof Cleaning',
+        'slug'        => 'gutter-roof-cleaning',
+        'short'       => 'Gutter & Roof Cleaning',
+        'description' => 'Gutter cleaning, solar panel cleaning and roof debris removal for Sacramento homes — keeping water moving, panels producing and rooflines clear.',
+        'keywords'    => ['gutter cleaning Sacramento CA', 'solar panel cleaning Sacramento'],
+        'services'    => [
+            'Gutter Cleaning',
+            'Solar Panel Cleaning',
+            'Roof Debris Cleaning',
+        ],
+    ],
+    [
+        'name'        => 'Pressure / Soft Washing',
+        'slug'        => 'pressure-washing',
+        'short'       => 'Pressure Washing',
+        'description' => 'Pressure washing and low-pressure soft washing for houses, roofs, driveways, patios, porches, decks and fences across Sacramento.',
+        'keywords'    => ['pressure washing Sacramento', 'soft washing Sacramento CA'],
+        'services'    => [
+            'House Washing',
+            'Roof Soft Washing',
+            'Driveway & Walkway Washing',
+            'Patio, Porch & Deck Washing',
+            'Fence Washing',
         ],
     ],
     [
         'name'        => 'Seasonal Services',
         'slug'        => 'seasonal-services',
-        'description' => 'Seasonal and commercial add-ons for Sacramento homes and businesses, including office cleaning and professional Christmas light installation.',
-        'keywords'    => ['office cleaning Sacramento', 'christmas light installation Sacramento CA'],
+        'short'       => 'Seasonal Services',
+        'description' => 'Christmas light installation and takedown for Sacramento homes and businesses — hung with proper clips, taken down after the holidays.',
+        'keywords'    => ['christmas light installation Sacramento CA'],
         'services'    => [
-            'Office Cleaning',
             'Christmas Light Installation',
+            'Christmas Light Takedown',
         ],
-    ],
-    [
-        'name'        => 'Gutter Cleaning',
-        'slug'        => 'gutter-cleaning',
-        'description' => 'Professional gutter cleaning for Sacramento homes — clearing debris and blockages to protect roofs, fascia and foundations before the rainy season.',
-        'keywords'    => ['gutter cleaning Sacramento CA'],
-        'services'    => [
-            'Gutter Cleaning',
-        ],
-        'solo'        => true,
     ],
 ];
 
-// Full flat service list (all 12 offerings) for schema / entity copy.
+// Full flat service list for schema / entity copy (client's five categories, 2026-10-10).
 $allServices = [
-    'House Cleaning',
-    'Deep Cleaning',
-    'Move-In / Move-Out Cleaning',
-    'Recurring House Cleaning',
-    'Office Cleaning',
-    'Post-Construction Cleaning',
-    'Carpet Cleaning',
     'Window Cleaning',
     'Blind Cleaning',
-    'Pressure Washing',
+    'Screen Cleaning',
+    'Screen & Blind Repairs',
+    'Deep Cleaning',
+    'Move-In / Move-Out Cleaning',
+    'Post-Construction Cleaning',
+    'Recurring Maintenance Cleaning',
     'Gutter Cleaning',
-    'Christmas Light Installation',
+    'Solar Panel Cleaning',
+    'Roof Debris Cleaning',
+    'Pressure Washing',
+    'Soft Washing',
+    'Christmas Light Installation & Takedown',
 ];
 
 /* ---------------------------------------------------------------------------
@@ -183,7 +213,7 @@ $formAction = 'https://db.pageone.cloud/functions/v1/leads/express-pro-cleaning-
  * ASSET CACHE-BUST — single source of truth. Bump on every framework.css change.
  * Pages must NEVER define their own $cssVersion.
  * ------------------------------------------------------------------------- */
-$cssVersion = '1';
+$cssVersion = '2';
 
 /* ---------------------------------------------------------------------------
  * LEAD ATTRIBUTION (v6.3) — sets the first-touch cookie and provides

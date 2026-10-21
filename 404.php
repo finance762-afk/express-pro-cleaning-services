@@ -137,7 +137,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
         <ul class="popular-links">
           <?php foreach ($services as $svc404): ?>
           <li>
-            <a href="/<?php echo getServiceSlug($svc404['slug']); ?>/">
+            <a href="/services/<?php echo e($svc404['slug']); ?>/">
               <?php echo icon('arrow-right', 16); ?>
               <span><?php echo e($svc404['name']); ?></span>
             </a>

@@ -10,7 +10,7 @@
   // $heroPreload (optional) — ['srcset' => '...', 'sizes' => '...']
 
   $fullTitle = $pageTitle ?? ($siteName . ' | ' . $primaryKeyword . ' | ' . $address['city'] . ', ' . $address['state']);
-  $description = $metaDescription ?? 'Professional cleaning services in ' . $address['city'] . ', CA. Family-owned since 1991. Call ' . $phone . ' for a free estimate.';
+  $description = $metaDescription ?? 'Professional cleaning services in ' . $address['city'] . ', CA. Family-owned since 1998. Call ' . $phone . ' for a free estimate.';
   $canonical = $canonicalUrl ?? $siteUrl . $_SERVER['REQUEST_URI'];
   $canonical = rtrim($canonical, '/') . '/'; // Ensure trailing slash
   ?>

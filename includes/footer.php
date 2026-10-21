@@ -11,7 +11,7 @@
             <p class="footer-tagline"><?php echo e($tagline); ?></p>
             <p class="footer-description">
               Professional cleaning services for Sacramento homes and businesses.
-              Trusted by families and companies since <?php echo $yearEstablished; ?>.
+              Serving the area since <?php echo $yearEstablished; ?>, family-owned since <?php echo $familyOwnedSince; ?>.
             </p>
             <div class="footer-badges">
               <div class="badge">
@@ -40,7 +40,7 @@
                 $footSvcCount++;
               ?>
               <li>
-                <a href="/<?php echo getServiceSlug($footSvc['slug']); ?>/">
+                <a href="/services/<?php echo e($footSvc['slug']); ?>/">
                   <?php echo e($footSvc['name']); ?>
                 </a>
               </li>
@@ -79,7 +79,7 @@
             <ul class="footer-contact">
               <li>
                 <?php echo icon('phone', 20); ?>
-                <a href="tel:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a>
+                <span><a href="tel:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a> or TEXT <a href="sms:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a></span>
               </li>
               <li>
                 <?php echo icon('mail', 20); ?>
@@ -109,12 +109,11 @@
         <meta itemprop="url" content="<?php echo $siteUrl; ?>">
         <meta itemprop="telephone" content="<?php echo $phone; ?>">
         <p>
-          <strong><?php echo e($siteName); ?></strong> is a family-owned cleaning company serving
-          <?php echo e($address['city']); ?>, California and surrounding communities since <?php echo $yearEstablished; ?>.
-          We specialize in <?php echo strtolower(implode(', ', array_slice($allServices, 0, 5))); ?> and more.
-          Our team delivers reliable, eco-conscious cleaning solutions for homes and businesses throughout
-          the Sacramento area. Call <a href="tel:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a>
-          for a free estimate today.
+          <strong><?php echo e($siteName); ?></strong>, home of the original Express Mini Blind &amp; Window Cleaning, has served
+          <?php echo e($address['city']); ?>, California and surrounding communities since <?php echo $yearEstablished; ?> and has been family-owned since <?php echo $familyOwnedSince; ?>.
+          We handle window, blind and screen cleaning, house cleaning, gutter and roof cleaning, pressure and soft washing, and Christmas light installation
+          for homes and businesses throughout the Sacramento area. Call <a href="tel:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a>
+          or TEXT <a href="sms:<?php echo $phoneRaw; ?>"><?php echo formatPhone($phone); ?></a> for a free estimate.
         </p>
       </div>
     </div>
